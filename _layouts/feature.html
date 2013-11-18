@@ -4,10 +4,10 @@
 <div class="header-container noborder ">
 	<div class="wrapper-wide borderbottom">
 		<header class="wrapper clearfix noborder">
-			<a href="../index.html" id="logo" class="trackcommon-01_icon">{{ site.copy.nml.nissan | t: }} {{ site.copy.nml.shift | t: }}{{ site.copy.general.underscore | t: }}</a>
+			<a href="../index.html" id="logo" class="trackcommon-01_icon">{{ site.copy.nml.nissan | t:'en' }} {{ site.copy.nml.shift | t:'en' }}{{ site.copy.general.underscore | t:'en' }}</a>
 			<div class="title">
-				<a href="../index.html" class="trackcommon-01">{{ site.copy.general.home | t: }}</a>
-				<a href="../explore_innovations.html" class="trackcommon-01b">{{ site.copy.general.explore_innovations | t: }}</a>
+				<a href="../index.html" class="trackcommon-01">{{ site.copy.general.home | t:'en' }}</a>
+				<a href="../explore_innovations.html" class="trackcommon-01b">{{ site.copy.general.explore_innovations | t:'en' }}</a>
 			</div>
 			<a href="#" class="menu-trigger"></a>
 		</header>
@@ -19,18 +19,18 @@
 		<div class="main wrapper clearfix">
 			<div class="page-heading clearfix">
 				<div class="ph-left">
-					<h2>{{ site.copy.nml.what_if | t: }}{{ site.copy.general.underscore | t: }}</h2>
-					<h3>{{ page.title | t: }}</h3>
+					<h2>{{ site.copy.nml.what_if | t:'en' }}{{ site.copy.general.underscore | t:'en' }}</h2>
+					<h3>{{ page.title | t:'en' }}</h3>
 				</div>
 				<div class="ph-right">
-					<a href="javascript:window.history.go(-1);" class="back trackcommon-03">{{ site.copy.buttons.back | t: }}</a>
+					<a href="javascript:'en'window.history.go(-1);" class="back trackcommon-03">{{ site.copy.buttons.back | t:'en' }}</a>
 				</div>
 			</div>
 			<article>
 				<header class="clearfix">
-					<h1>{{ page.subtitle | t: }}</h1>
-					{% if page.image %}<img src="{{ page.relative_root | t: }}{{ site.image_root }}{{ page.image_dir | t: }}/{{ page.image | t: }}" alt="{{ page.subtitle | t: }}" />{% endif %}
-					<p>{{ page.description | t: }}</p>
+					<h1>{{ page.subtitle | t:'en' }}</h1>
+					{% if page.image %}<img src="{{ page.relative_root | t:'en' }}{{ site.image_root }}{{ page.image_dir | t:'en' }}/{{ page.image | t:'en' }}" alt="{{ page.subtitle | t:'en' }}" />{% endif %}
+					<p>{{ page.description | t:'en' }}</p>
 				</header>
 			</article>
 
@@ -127,14 +127,14 @@
 					
 					{% for cta in page.cta %}
 						
-						<a class="feature{% if cta.class %} {{ cta.class | t: }}{% endif %}{% unless forloop.first %} secondary{% endunless %}"{% if cta.rel %} rel="{{ cta.rel | t: }}" {% endif %}href="{{ cta.href | t: }}">{% if cta.strong_text %}<strong>{{ cta.strong_text | t: }}</strong>{% endif %}{{ cta.text | t: }}{% if cta.strong_text_after %}<strong>{{ cta.strong_text_after | t: }}</strong>{% endif %}</a>
+						<a class="feature{% if cta.class %} {{ cta.class | t:'en' }}{% endif %}{% unless forloop.first %} secondary{% endunless %}"{% if cta.rel %} rel="{{ cta.rel | t:'en' }}" {% endif %}href="{{ cta.href | t:'en' }}">{% if cta.strong_text %}<strong>{{ cta.strong_text | t:'en' }}</strong>{% endif %}{{ cta.text | t:'en' }}{% if cta.strong_text_after %}<strong>{{ cta.strong_text_after | t:'en' }}</strong>{% endif %}</a>
 						
 					{% endfor %}
 					
 				</div>
 				<div class="article-right">
 					<div class="share-box">
-						<a href="javascript:void(0);" class="share">{{ site.copy.general.share | t: }}</a>
+						<a href="javascript:'en'void(0);" class="share">{{ site.copy.general.share | t:'en' }}</a>
 						<div class="share-flyout">
 							<span class='st_facebook_large trackcommon-04-facebook' displayText='Facebook'></span> 
 							<span class='st_twitter_large trackcommon-04-twitter' displayText='Tweet'></span> 
@@ -148,7 +148,7 @@
 			</article>
 
 			<div class="back-bottom">
-				<a href="javascript:window.history.go(-1);" class="back trackcommon-03">{{ site.copy.buttons.back | t: }}</a>
+				<a href="javascript:'en'window.history.go(-1);" class="back trackcommon-03">{{ site.copy.buttons.back | t:'en' }}</a>
 			</div>
 		</div> <!-- #main -->
 	</div>
