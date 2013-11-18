@@ -35,7 +35,7 @@
             	<div class="feature-full">
             		<div class="wrapper clearfix">
             			<div class="statements-full initialload">
-            				<div class="whatif_" id="wi2">{{ site.copy.nml.what_if | t: }}<span class="underscore">{{ site.copy.general.underscore | t: }}</span></div>
+            				<div class="whatif_" id="wi2">{{ site.copy.nml.what_if | 'en' }}<span class="underscore">{{ site.copy.general.underscore | t: }}</span></div>
             				<div class="statement-one" id="st1-2">{{ page.features.gt_r.statement_01 | t: }}</div>
             				<div class="statement-two" id="st2-2">{{ page.features.gt_r.statement_02 | t: }}{% if page.features.gt_r.statement_02_em %}<span class="strong em">{{ page.features.gt_r.statement_02_em | t: }}</span>{% endif %}{{ page.features.gt_r.statement_02_post | t: }}</div>
             				<div class="statement-three" id="st3-2">{{ page.features.gt_r.statement_03 | t: }}</div>
