@@ -1,0 +1,13 @@
+<article class="subsection clearfix noborder">
+	<ul class="grid-wrap quarter-gutter features">
+		{% for item in page.features %}
+			<li data-id="{{ item.class | t: }}" class="grid-col bp1-col-one-third bp2-col-one-third explore">
+				<img src="{{ page.relative_root | t: }}{{ site.image_root }}{{ page.image_dir | t:  }}/{{ item.image | t: }}" alt="{{ item.title | t: }}"  />
+				<h2>{{ site.copy.nml.what_if | t: }}{{ site.copy.general.underscore | t: }}</h2>
+				<p>{{ item.statement | t: }}</p>
+				<h3>{{ item.title | t: }}</h3>
+				<a href="feature/{{ item.link | t: }}">{{ site.copy.buttons.learn_more | t: }}</a> 
+			</li>
+		{% endfor %}
+	</ul>
+</article>

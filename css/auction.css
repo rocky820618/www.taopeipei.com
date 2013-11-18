@@ -1,0 +1,63 @@
+
+article header {
+	margin-top: 2.5em;
+	padding-bottom: 0em;
+	margin-bottom: 0em;
+	border-bottom: none;
+}
+
+article header h1 {
+	padding-bottom: 0em;
+	font: normal 2.9em/0.9em 'NissanAGBold';
+}
+
+article header h2 {
+	font-size: 1.4em;
+	margin: 0em 0em 0em 0em;
+	line-height: 18px;
+}
+
+article header h5 {
+	font: normal 0.8em/1.4em 'NissanAGBold';
+	margin: 0.2em 0em 1.8em 0em;
+}
+
+article header p { margin: 0.95em 0em; }
+
+article p { margin: 0.5em 0em 0.95em 0em; }
+
+article h4 { margin: 0.8em 0em 0.55em 0em; }
+
+article {
+	padding-bottom: 1em;
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid #D2D2D2;
+}
+
+article img {
+	max-width: 100%;
+	height: auto;
+}
+
+article.last {
+	border: none;
+}
+
+@media only screen and (max-width: 509px) {
+	article header h1 span {font: normal 1.45em/0.9em 'NissanAGBold';}
+}
+
+/* Show language switch in the header */
+.japanese{display: block;}
+.english{display: block; border: none !important;}
+
+.header-container header .title{ display: block; }
+	
+a.share {
+	color: #FFF;
+	background: transparent url(../img/goldauction/share.png) no-repeat 4px 5px;
+}
+
+.share-box {
+	padding-top: 5px;
+}

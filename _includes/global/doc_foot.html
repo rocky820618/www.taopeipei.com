@@ -1,0 +1,326 @@
+  <!-- library scripts -->
+  <script src="{{ page.relative_root }}js/libs/jquery.min.js"></script> 
+  {% if page.layout == 'homepage' %}
+  	<!--[if lt IE 8]>
+      <script src="{{ page.relative_root }}js/libs/DD_belatedPNG.min.js"></script>
+    <![endif]-->
+    <script src="{{ page.relative_root }}js/libs/jquery.scrollto.min.js"></script>  
+  {% else %}
+    <script src="{{ page.relative_root }}js/libs/jquery.touchwipe.min.js">  </script>  
+  {% endif %}
+  
+  <script src="{{ page.relative_root }}js/libs/jquery.fancybox.js"> </script>   
+  <script src="{{ page.relative_root }}js/libs/jquery.fancybox.media.js"></script> 
+  <script src="{{ page.relative_root }}js/libs/jquery.mobiledetect.js"></script>
+  <script src="{{ page.relative_root }}js/libs/jquery.jpanelmenu.js"></script>
+  
+  {% comment %}
+  ------------------
+  
+  ------------------
+  {% endcomment %}
+  {% if page.explore %}
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // Generate an array of locations
+      var locations_test = {
+        {% for location in site.copy.locations %}
+          {{ location.region.key | t: }} : {
+            name: '{{ location.region.name | t: }}',
+            countries: {
+              {% for country in location.countries %}
+                {{ country.key }} : '{{ country.name | t: }}'{% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            }
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      };
+
+      // Generate an array of page related country links
+      var links_test = {
+        {% for link in page.explore.countries %}
+          {{ link.key | t: }} : '{{ link.href | t: }}'{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      };
+      
+      // Generate select box options based on a pages country links and site locations
+      var buildExploreForm = function (locations, countryLinks) {
+        var output = '<option value=""></option>{% if page.explore.global %}<optgroup label=""><option value="{{ page.explore.global | t: }}">{{ site.copy.general.global | t: }}</option></optgroup>{% endif %}';
+
+        for (var region in locations) {
+          var countries = locations[region].countries;
+
+          output += '<optgroup label="' + locations[region].name + '">';
+          
+          for (var country in countries) {
+            if (countryLinks[country]) {
+              output += '<option value="' + countryLinks[country] + '">' + countries[country] + '</option>';
+            }
+          }
+
+          output += '</optgroup>'
+        }
+
+        // Add the options to the hidden select form
+        $('.modal-data #change-country').append(output);
+      }
+
+      buildExploreForm(locations_test, links_test);
+
+      $(".select-box").chosen();
+    });
+  </script>
+  {% endif %}
+
+  <script src="{{ page.relative_root }}js/libs/jquery.chosen.min.js"> </script>        
+  
+  <!-- global scripts --> 
+  <script src="{{ page.relative_root }}js/jquery.common.js"></script>        
+  
+  <!-- page scripts --> 
+  {% if page.layout == 'feature' %}
+    <script src="{{ page.relative_root }}js/jquery.gallery.js">  </script> 
+  {% elsif page.layout == 'explore' %}
+    <script src="{{ page.relative_root }}js/jquery.explore.js">  </script> 
+  {% else %}
+    <script src="{{ page.relative_root }}js/jquery.index.js"></script>
+  {% endif %}
+  
+  {% if page.scripts %}
+    {% for script in page.scripts %}
+      <script src="{{ page.relative_root }}js/{{ script }}"></script>  
+    {% endfor %}
+  {% endif %}
+
+  <!--[if lt IE 9]>
+    <script src="{{ page.relative_root }}js/jquery.exception-ie7.js">  </script>       
+  <![endif]-->
+  
+  <!--[if lt IE 7]>
+    <script src="{{ page.relative_root }}js/jquery.exception.js">  </script>       
+  <![endif]-->
+
+  <!-- tracking scripts --> 
+  <script type="text/javascript">
+    
+    var sPath=window.location.pathname;
+    var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+    //alert(sPage);
+    
+    var _gaq = _gaq || [];
+   
+    
+    if(sPage == 'the_kings_of_new_york.html'){
+    
+    	_gaq.push(['k._setAccount', 'UA-35321769-14']);
+		_gaq.push(['k._setCustomVar', 1, 'Domain', 'nissanwhatif.com', 2]); 
+		_gaq.push(['k._setCustomVar', 2, 'Language', '{{ lang }}', 2]); 
+		_gaq.push(['k._setDomainName', 'nissanwhatif.com']);
+		_gaq.push(['k._setAllowLinker', true]);
+		_gaq.push(['k._trackPageview']);
+		
+		_gaq.push(['_setAccount', 'UA-35321769-1']);
+		_gaq.push(['_setCustomVar', 1, 'Activation', 'Kong', 2]); 
+		_gaq.push(['_setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+		_gaq.push(['_setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+		_gaq.push(['_setDomainName', 'nissanwhatif.com']);
+		_gaq.push(['_setAllowLinker', true]);
+		_gaq.push(['_trackPageview']);
+		
+		_gaq.push(['c._setAccount', 'UA-35321769-3']);
+		_gaq.push(['c._setCustomVar', 1, 'Activation', 'Kong', 2]); 
+		_gaq.push(['c._setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+		_gaq.push(['c._setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+		_gaq.push(['c._setDomainName', 'nissanwhatif.com']);
+		_gaq.push(['c._setAllowLinker', true]);
+		_gaq.push(['c._trackPageview']);
+
+  	}else if(sPage == 'director_of_excitement.html'){
+  	    
+    	 _gaq.push(['_setAccount', 'UA-35321769-1']);
+    	 _gaq.push(['_setCustomVar', 1, 'Activation', 'Bolt', 2]); 
+    	 _gaq.push(['_setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+    	 _gaq.push(['_setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+    	 _gaq.push(['_setDomainName', 'nissanwhatif.com']);
+    	 _gaq.push(['_setAllowLinker', true]);
+    	 _gaq.push(['_trackPageview']);
+    	 
+    	  _gaq.push(['b._setAccount', 'UA-35321769-2']);
+    	  _gaq.push(['b._setCustomVar', 1, 'Domain', 'nissanwhatif.com', 2]); 
+    	  _gaq.push(['b._setCustomVar', 2, 'Language', '{{ lang }}', 2]); 
+    	  _gaq.push(['b._setDomainName', 'nissanwhatif.com']);
+    	  _gaq.push(['b._setAllowLinker', true]);;
+    	  _gaq.push(['b._trackPageview']);
+    	
+    	  _gaq.push(['c._setAccount', 'UA-35321769-3']);
+    	  _gaq.push(['c._setCustomVar', 1, 'Activation', 'Bolt', 2]); 
+    	  _gaq.push(['c._setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+    	  _gaq.push(['c._setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+    	  _gaq.push(['c._setDomainName', 'nissanwhatif.com']);
+    	  _gaq.push(['c._setAllowLinker', true]);
+    	  _gaq.push(['c._trackPageview']);
+  	
+  	 }else if(sPage == 'remote_climate_control.html'){
+  	     
+  	 	  _gaq.push(['_setAccount', 'UA-35321769-1']);
+  	 	  _gaq.push(['_setCustomVar', 1, 'Activation', 'RCC', 2]); 
+  	 	  _gaq.push(['_setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+  	 	  _gaq.push(['_setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+  	 	  _gaq.push(['_setDomainName', 'nissanwhatif.com']);
+  	 	  _gaq.push(['_setAllowLinker', true]);
+  	 	  _gaq.push(['_trackPageview']);
+  	 	  
+  	 	  _gaq.push(['d._setAccount', 'UA-35321769-4']);
+  	 	  _gaq.push(['d._setCustomVar', 1, 'Domain', 'nissanwhatif.com', 2]); 
+  	 	  _gaq.push(['d._setCustomVar', 2, 'Language', '{{ lang }}', 2]); 
+  	 	  _gaq.push(['d._setDomainName', 'nissanwhatif.com']);
+  	 	  _gaq.push(['d._setAllowLinker', true]);
+  	 	  _gaq.push(['d._trackPageview']);
+  	 	 
+  	 	  _gaq.push(['c._setAccount', 'UA-35321769-3']);
+  	 	  _gaq.push(['c._setCustomVar', 1, 'Activation', 'RCC', 2]); 
+  	 	  _gaq.push(['c._setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+  	 	  _gaq.push(['c._setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+  	 	  _gaq.push(['c._setDomainName', 'nissanwhatif.com']);
+  	 	  _gaq.push(['c._setAllowLinker', true]);
+  	 	  _gaq.push(['c._trackPageview']);
+  	 
+  	 }else if(sPage == 'sunrise_to_sunset.html'){
+  	      
+  	  	 _gaq.push(['_setAccount', 'UA-35321769-1']);
+  	  	 _gaq.push(['_setCustomVar', 1, 'Activation', 'Sunrise Sunset', 2]); 
+  	  	 _gaq.push(['_setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+  	  	 _gaq.push(['_setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+  	  	 _gaq.push(['_setDomainName', 'nissanwhatif.com']);
+  	  	 _gaq.push(['_setAllowLinker', true]);
+  	  	 _gaq.push(['_trackPageview']);
+  	  	   
+  	  	 _gaq.push(['e._setAccount', 'UA-35321769-5']);
+  	  	 _gaq.push(['e._setCustomVar', 1, 'Domain', 'nissanwhatif.com', 2]); 
+  	  	 _gaq.push(['e._setCustomVar', 2, 'Language', '{{ lang }}', 2]); 
+  	  	 _gaq.push(['e._setDomainName', 'nissanwhatif.com']);
+  	  	 _gaq.push(['e._setAllowLinker', true]);
+  	  	 _gaq.push(['e._trackPageview']);
+  	  	  
+  	  	 _gaq.push(['c._setAccount', 'UA-35321769-3']);
+  	  	 _gaq.push(['c._setCustomVar', 1, 'Activation', 'Sunrise Sunset', 2]); 
+  	  	 _gaq.push(['c._setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+  	  	 _gaq.push(['c._setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+  	  	 _gaq.push(['c._setDomainName', 'nissanwhatif.com']);
+  	  	 _gaq.push(['c._setAllowLinker', true]);
+  	  	 _gaq.push(['c._trackPageview']);
+  	  
+  	 }else if(sPage == 'nissan_gt_r.html'){
+    
+    	_gaq.push(['k._setAccount', 'UA-35321769-13']);
+		_gaq.push(['k._setCustomVar', 1, 'Domain', 'nissanwhatif.com', 2]); 
+		_gaq.push(['k._setCustomVar', 2, 'Language', '{{ lang }}', 2]); 
+		_gaq.push(['k._setDomainName', 'nissanwhatif.com']);
+		_gaq.push(['k._setAllowLinker', true]);
+		_gaq.push(['k._trackPageview']);
+		
+		_gaq.push(['_setAccount', 'UA-35321769-1']);
+		_gaq.push(['_setCustomVar', 1, 'Activation', 'GT-R', 2]); 
+		_gaq.push(['_setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+		_gaq.push(['_setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+		_gaq.push(['_setDomainName', 'nissanwhatif.com']);
+		_gaq.push(['_setAllowLinker', true]);
+		_gaq.push(['_trackPageview']);
+		
+		_gaq.push(['c._setAccount', 'UA-35321769-3']);
+		_gaq.push(['c._setCustomVar', 1, 'Activation', 'GT-R', 2]); 
+		_gaq.push(['c._setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+		_gaq.push(['c._setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+		_gaq.push(['c._setDomainName', 'nissanwhatif.com']);
+		_gaq.push(['c._setAllowLinker', true]);
+		_gaq.push(['c._trackPageview']);
+		
+    }else if(sPage == 'remote_charge.html'){
+    
+    	_gaq.push(['k._setAccount', 'UA-35321769-12']);
+    	_gaq.push(['k._setCustomVar', 1, 'Domain', 'nissanwhatif.com', 2]); 
+    	_gaq.push(['k._setCustomVar', 2, 'Language', '{{ lang }}', 2]); 
+    	_gaq.push(['k._setDomainName', 'nissanwhatif.com']);
+    	_gaq.push(['k._setAllowLinker', true]);
+    	_gaq.push(['k._trackPageview']);
+    	
+    	_gaq.push(['_setAccount', 'UA-35321769-1']);
+    	_gaq.push(['_setCustomVar', 1, 'Activation', 'Remote Charge', 2]); 
+    	_gaq.push(['_setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+    	_gaq.push(['_setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+    	_gaq.push(['_setDomainName', 'nissanwhatif.com']);
+    	_gaq.push(['_setAllowLinker', true]);
+    	_gaq.push(['_trackPageview']);
+    	
+    	_gaq.push(['c._setAccount', 'UA-35321769-3']);
+    	_gaq.push(['c._setCustomVar', 1, 'Activation', 'Remote Charge', 2]); 
+    	_gaq.push(['c._setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+    	_gaq.push(['c._setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+    	_gaq.push(['c._setDomainName', 'nissanwhatif.com']);
+    	_gaq.push(['c._setAllowLinker', true]);
+    	_gaq.push(['c._trackPageview']);
+    	
+    }else if(sPage == 'around_view_monitor.html'){
+    
+    	_gaq.push(['j._setAccount', 'UA-35321769-10']);
+    	_gaq.push(['j._setCustomVar', 1, 'Domain', 'nissanwhatif.com', 2]); 
+    	_gaq.push(['j._setCustomVar', 2, 'Language', '{{ lang }}', 2]); 
+    	_gaq.push(['j._setDomainName', 'nissanwhatif.com']);
+    	_gaq.push(['j._setAllowLinker', true]);
+    	_gaq.push(['j._trackPageview']);
+    	
+    	_gaq.push(['_setAccount', 'UA-35321769-1']);
+    	_gaq.push(['_setCustomVar', 1, 'Activation', 'Around View Monitor', 2]); 
+    	_gaq.push(['_setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+    	_gaq.push(['_setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+    	_gaq.push(['_setDomainName', 'nissanwhatif.com']);
+    	_gaq.push(['_setAllowLinker', true]);
+    	_gaq.push(['_trackPageview']);
+    	
+    	_gaq.push(['c._setAccount', 'UA-35321769-3']);
+    	_gaq.push(['c._setCustomVar', 1, 'Activation', 'Around View Monitor', 2]); 
+    	_gaq.push(['c._setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+    	_gaq.push(['c._setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+    	_gaq.push(['c._setDomainName', 'nissanwhatif.com']);
+    	_gaq.push(['c._setAllowLinker', true]);
+    	_gaq.push(['c._trackPageview']);
+    	
+    }else{
+    
+    	_gaq.push(['_setAccount', 'UA-35321769-1']);
+    	_gaq.push(['_setCustomVar', 1, 'Activation', 'Hub', 2]); 
+    	_gaq.push(['_setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+    	_gaq.push(['_setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+    	_gaq.push(['_setDomainName', 'nissanwhatif.com']);
+    	_gaq.push(['_setAllowLinker', true]);
+    	_gaq.push(['_trackPageview']);
+    	
+    	_gaq.push(['c._setAccount', 'UA-35321769-3']);
+    	_gaq.push(['c._setCustomVar', 1, 'Activation', 'hub', 2]); 
+    	_gaq.push(['c._setCustomVar', 2, 'Domain', 'nissanwhatif.com', 2]); 
+    	_gaq.push(['c._setCustomVar', 3, 'Language', '{{ lang }}', 2]); 
+    	_gaq.push(['c._setDomainName', 'nissanwhatif.com']);
+    	_gaq.push(['c._setAllowLinker', true]);
+    	_gaq.push(['c._trackPageview']);
+    
+    }
+
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  <script src="{{ page.relative_root }}js/track/tracking.common.js">  </script>        
+  
+  {% if page.layout == 'feature' %}
+  <script src="{{ page.relative_root }}js/track/tracking.feature.js">  </script>
+  {% else %}
+  <script src="{{ page.relative_root }}js/track/tracking.hub.js">  </script>
+  {% endif %}
+  
+  
+</body>
+</html>

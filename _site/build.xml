@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    
+<project name="NissanWhatIf" default="build-all" basedir=".">
+
+    <!-- path to YUI Compressor -->
+    <property name="yui-path" location="_lib/yuicompressor-2.4.7.jar" />
+
+    <!-- paths to build resources -->
+    <property name="js-path" location="_site/js" />
+    <property name="css-path" location="_site/css" />
+
+    <!-- run all targets -->
+    <target name="build-all" description="Running all build targets" depends="concat-early-js,minify-js,minify-css"/>
+
+    <!-- concatenate "early" js -->
+    <target name="concat-early-js" description="Concatenate all the early-loading JS to one file">
+        <concat destfile="${js-path}/early-script.js" fixlastline="yes">
+            <filelist dir="${js-path}" files="cufon.js,frutiger.font.js,frutiger-light.font.js,cufon-config.js,syze.min.js,syze-config.js,html5shiv.js,modernizr.js" />
+        </concat>
+    </target>
+
+    <!-- minify script.js -->
+    <target name="minify-js" description="Minify all JavaScript">
+        <apply executable="java" parallel="false">
+            <!-- look for any javascript files in the build dir -->
+            <fileset dir="${js-path}" includes="script.js"/>
+            <!-- pass arguments to the yui program -->
+            <arg line="-jar"/>
+            <arg path="${yui-path}"/>
+            <srcfile/>
+            <!-- output minified files to our js dir with .min.js extenstion -->
+            <arg line="--nomunge"/>
+            <arg line="--preserve-semi"/>
+            <arg line="-o"/>
+            <mapper type="glob" from="script.js" to="${js-path}/script.min.js" />
+            <targetfile/>
+        </apply>
+    </target>
+
+    <!-- minify style.css -->
+    <target name="minify-css" description="Minify the Less-generated style.css">
+        <apply executable="java" parallel="false">
+            <filelist dir="${css-path}" files="style.css"/>
+            <arg line="-jar"/>
+            <arg path="${yui-path}"/>
+            <srcfile/>
+            <arg line="-o"/>
+            <mapper type="glob" from="style.css" to="${css-path}/style.min.css"/>
+            <targetfile/>
+        </apply>
+    </target>
+
+    <target name="fix-french">
+        <delete>
+            <fileset dir="." includes="**/*.fr.html" />
+        </delete>
+        <exec executable="/bin/bash">
+            <arg value="fix-french.sh" />
+        </exec>
+    </target>
+    
+
+</project>

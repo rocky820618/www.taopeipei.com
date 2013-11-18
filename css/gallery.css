@@ -1,0 +1,135 @@
+/* thumbnail icons */
+.subsection ul,
+.videos ul,
+.gallery ul{
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 0.625em;
+}
+
+.subsection ul{
+	padding-bottom: 0.875em;
+}
+
+.videos ul li a.video,
+.gallery ul li.image{
+	position: relative;
+}
+
+.noborder{
+	border: none;
+}
+
+.videos p{font-size: 0.875em;line-height: 1.25em;margin-top: 0em;padding-top: 0em;padding-right: 1.875em;}
+
+.videos h3{
+	text-transform: uppercase;
+	font-size: normal 1.125em/1em 'NissanAGBold';
+	margin-bottom: 0.1875em;
+}
+
+.subsection ul li h4{
+	text-transform: uppercase;
+	font: normal 1.125em/1em 'NissanAGBold' !important;
+	margin-bottom: -0.2em;
+}
+
+
+
+.videos ul li a.video span.icon,
+.subsection ul li a.video span.icon,
+.gallery ul li.image span.icon{
+	overflow:hidden;
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:73px;
+	height:74px;
+	margin:-37px 0 0 -37px;
+	background-position:left-top;
+	background-repeat:none;
+	cursor:pointer;
+}
+
+.video{
+	position: relative;
+}
+
+.video .highlight{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(34, 34, 34, 0.50);	
+}
+
+.highlight{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0.5em;
+	background-color: rgba(34, 34, 34, 0.50);	
+}
+
+.gallery ul li.image span.icon{ 
+	display:none;
+	z-index: 5;
+	background: url(../img/zoom.png) ;
+}
+
+.videos ul li a.video span.icon{ 
+	z-index: 5;
+	background: url(../img/play.png);
+}
+
+.subsection ul li a.video span.icon{ 
+	z-index: 5;
+	background: url(../img/play.png);
+}
+
+.gallery ul li:hover span.icon{ 
+	display:block; 
+}
+
+@media only screen and (min-width: 320px) {
+	
+	.videos ul li{
+		padding-bottom: 0.688em;
+	}
+	
+	.videos ul li:last-child{
+		padding-bottom: 0;
+	}
+
+	.galleryimg{
+		cursor: default;
+	}
+
+	.gallery ul li.image span.icon{
+		cursor: default;
+	}
+
+	.gallery ul li:hover span.icon{ 
+		display:none; 
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	.videos ul li{
+		padding-bottom: 0em;
+	}
+
+	.galleryimg{
+		cursor: pointer;
+	}
+
+	.gallery ul li.image span.icon{
+		cursor: pointer;
+	}
+
+	.gallery ul li:hover span.icon{ 
+		display:block; 
+	}
+}
+

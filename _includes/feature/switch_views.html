@@ -1,0 +1,13 @@
+{% assign count = page.switch_views.size %}
+<article class="subsection clearfix">
+	<h2>{{ site.copy.general.switch_views | t: }}</h2>
+	<ul class="grid-wrap{% if count > 1 %} quarter-gutter{% endif %}">
+		{% for item in page.switch_views %}
+			<li class="grid-col{% if count == 1 %} bp1-col-full bp2-col-full{% elsif count == 2 %} bp1-col-one-half bp2-col-one-half{% elsif count == 3 %} bp1-col-one-third bp2-col-one-third{% endif %}  quarterbottom">
+				{% if item.image %}<img src="{{ page.relative_root | t: }}{{ site.image_root }}{{ page.image_dir | t:  }}/{{ item.image | t: }}" alt="{{ item.title | t: }}"  />{% endif %}
+				{% if item.title %}<h3 class="fullh3">{{ item.title | t: }}</h3>{% endif %}
+				{% if item.text %}<p>{{ item.text | t: }}</p>{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+</article>

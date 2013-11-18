@@ -1,0 +1,376 @@
+
+.statements, .statements-full{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+
+.statements-full {
+	width: 48%;
+	margin: 0 2% 0 50%;
+}
+
+.feature-left,
+.feature-right{
+	width: 50%;
+	height: auto;
+	float: left;
+}
+
+.feature-right{
+	float: right;
+}
+
+.wrapper .feature-left,
+.wrapper .feature-right{
+	width: 50%;
+	height: auto;
+}
+
+.feature-full{
+	float: left;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.feature-left img,
+.feature-right img,
+.feature-full img{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.feature-left .whatif_{
+	text-transform: uppercase;
+	padding-top: 1.25em;
+	position: absolute;
+	color: #FFF;
+	float: right;
+	width: 100%;
+	text-align: right;
+	z-index: 1;
+	font: normal 2.0em/1em 'NissanAGBold';
+}
+
+.fr .feature-left .whatif_{
+	font: normal 1.8em/1em 'NissanAGBold';
+}
+
+
+.feature-full .whatif_{
+	text-transform: uppercase;
+	position: absolute;
+	color: #FFF;
+	float: left;
+	width: 100%;
+	text-align: left;
+	z-index: 1;
+	font: normal 3.75em/1em 'NissanAGBold';
+}
+
+.feature-full .statement-one,
+.feature-full .statement-two,
+.feature-full .statement-three,
+.feature-full .statement-four{
+	text-transform: uppercase;
+	padding-top: 5.8em;
+	position: absolute;
+	color: #000;
+	float: left;
+	width: 100%;
+	left: 0;
+	z-index: 1;
+	font: normal 2.813em/1em 'NissanAGRegular';
+}
+
+.feature-full .statement-two{
+	text-align: left;
+	white-space: nowrap;
+}
+
+.feature-full .statement-four{
+	font: normal 1.25em/1em 'NissanAGBold';
+}
+
+.leftlearn{
+	float: left;
+	left: 0;
+	position: absolute;
+	z-index: 5;
+}
+
+
+.feature-right .statement-one,
+.feature-right .statement-two,
+.feature-right .statement-three,
+.feature-right .tag-line{
+	text-transform: uppercase;
+	padding-top: 1.25em;
+	position: absolute;
+	color: #000;
+	float: left;
+	width: 100%;
+	left: 0;
+	z-index: 1;
+	font: normal 2.0em/1em 'NissanAGRegular';
+	padding-left: 0.125em;
+}
+
+.feature-right .statement-two{
+	padding-top: 2.25em;
+	padding-left: 0em;
+	text-align: right;
+}
+
+.feature-right .statement-three{
+	padding-top: 5.5em;
+	padding-left: 0em;
+	text-align: right;
+	font: normal 1.25em/1em 'NissanAGBold';
+}
+
+.feature-right .statements .tag-line{
+	float: right;
+	position: absolute;
+	text-transform: none;
+	text-align: right;
+	top: 88%;
+	font: normal 1.563em/1em 'NissanAGMedExt';
+}
+
+.feature-full .statements{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.feature-full .tag-line{
+	text-transform: none;
+	padding-left: 0em;
+	text-align: center;
+	font: normal 1.563em/1em 'NissanAGMedExt';
+	position: absolute;
+	color: #FFF;
+	padding-top: 48%;
+	padding-left: 50%;
+	width: 50%;
+	text-align: right;
+	z-index: 1;
+}
+
+.split{
+	float: left;
+	left: 50%;
+	margin-left: -7.5em;
+	position: absolute;
+	z-index: 5;
+}
+
+@media only screen and (min-width: 320px) {
+	.feature-container{ 
+		position: relative;
+		width: 100%;
+	}
+	
+	.feature-left .whatif_{
+		padding-top: 1.40em;
+		float: right;
+		font: normal 0.7em/1em 'NissanAGBold';
+	}
+	
+	.fr .feature-left .whatif_{
+		font: normal 0.625em/1em 'NissanAGBold';
+	}
+	
+	.feature-right .statement-one,
+	.feature-right .statement-two,
+	.feature-right .statement-three{
+		padding-top: 1.40em;
+		font: normal 0.7em/1em 'NissanAGRegular';
+		padding-left: 0.125em;
+	}
+	
+	.feature-right .statement-two{
+		padding-top: 2.5em;
+	}
+	
+	.feature-right .statement-three{
+		font: normal 0.65em/1em 'NissanAGBold';
+	}
+		
+	.split{
+		float: left;
+		left: 50%;
+		/*top: -5%;*/
+		margin-left: -1.15em;
+		position: absolute;
+		z-index: 5;
+	}
+	
+}
+
+@media only screen and (min-width: 480px) {
+	.split{
+		float: left;
+		left: 50%;
+		/*top: -2%;*/
+		margin-left: -1.05em;
+		position: absolute;
+		z-index: 5;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	.feature-left .whatif_{
+		padding-top: 1.00em;
+		float: right;
+		font: normal 1.5em/1em 'NissanAGBold';
+	}
+	
+	.fr .feature-left .whatif_{
+		font: normal 1.575em/1em 'NissanAGBold';
+	}
+	
+	.feature-right .statement-one,
+	.feature-right .statement-two,
+	.feature-right .statement-three{
+		padding-top: 1.00em;
+		font: normal 1.50em/1em 'NissanAGRegular';
+		padding-left: 0.125em;
+	}
+	
+	.feature-right .statement-two{
+		padding-top: 2.00em;
+	}
+	
+	.feature-right .statement-three{
+		padding-left: 0em;
+		text-align: right;
+		font: normal 1.1em/1em 'NissanAGBold';
+	}
+	
+	.split{
+		float: left;
+		left: 50%;
+		margin-left: -7.5em;
+		position: absolute;
+		z-index: 5;
+	}
+
+
+}
+
+@media only screen and (min-width: 1007px) {
+	.feature-left .whatif_{
+		padding-top: 1.25em;
+		width: 100%;
+		font: normal 2.0em/1em 'NissanAGBold';
+	}
+	
+	.feature-right .statement-one,
+	.feature-right .statement-two,
+	.feature-right .statement-three{
+		padding-top: 1.25em;
+		width: 100%;
+		font: normal 2.0em/1em 'NissanAGRegular';
+		padding-left: 0.125em;
+	}
+	
+	.feature-right .statement-two{
+		width: 98%;
+		padding-top: 2.25em;
+		padding-left: 0em;
+	}
+	
+	.feature-right .statement-three{
+		padding-top: 5.5em;
+		padding-left: 0em;
+		width: 98%;
+		text-align: right;
+		font: normal 1.25em/1em 'NissanAGBold';
+	}
+	
+	
+	.feature-full .whatif_{
+		text-transform: uppercase;
+		padding-top: 2.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 100%;
+		text-align: left;
+		z-index: 1;
+		font: normal 3.75em/1em 'NissanAGBold';
+	}
+	
+	.feature-full .statement-one,
+	.feature-full .statement-two,
+	.feature-full .statement-three,
+	.feature-full .statement-four{
+		text-transform: uppercase;
+		padding-top: 4.8em;
+		position: absolute;
+		color: #000;
+		float: left;
+		width: 100%;
+		left: 0;
+		z-index: 1;
+		font: normal 2.813em/1em 'NissanAGRegular';
+	}
+	
+	.feature-full .statement-two{
+		padding-top: 5.85em;
+		padding-left: 0em;
+		text-align: left;
+		white-space: nowrap;
+	}
+	
+	.feature-full .statement-four{
+		padding-top: 16.0em;
+		padding-left: 0em;
+		text-align: left;
+		font: normal 1.25em/1em 'NissanAGBold';
+	}
+	
+
+}
+
+@media only screen and (min-width: 1280px) {
+	
+	.feature-left,
+	.feature-right{
+		width: 640px;
+		height: auto;
+	}
+	
+	.wrapper .feature-left,
+	.wrapper .feature-right{
+		position: relative;
+		float: left;
+		width: 475px;
+		height: 100%;
+	}
+	
+	.wrapper .feature-right{
+		float: right;
+	}
+	
+	.wrapper .feature-left .whatif_{
+		width: 475px;
+	}
+	
+	.wrapper .feature-right .statement-one.
+	.wrapper .feature-right .statement-two,
+	.wrapper .feature-right .statement-three,
+	.wrapper .feature-right .tag-line{
+		width: 475px;
+	}
+	
+
+}
+
+

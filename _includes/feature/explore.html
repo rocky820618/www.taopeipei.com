@@ -1,0 +1,21 @@
+<div id="{{ page.explore.id | t: }}" class="modal-data clearfix grid-wrap">
+	<div class="grid-col bp1-col-full bp2-col-full">
+		<h2>{{ page.explore.title | t: }}</h2>
+		<p>{{ site.copy.general.select_country | t: }}:</p>
+		{% comment %}
+		------------------
+		The select input is being generated with javascript located in the doc_foot.html include.
+		This is being done as a work around as there doesn't seem to be a way to combine Liquid 
+		output blocks dynamically. This is the best solution for the time being.
+
+		Country names are being pulled from the global YML file (_config.yml) and the country
+		links from the local page files (ex: sunrise_to_sunset.en.html). 
+		------------------
+		{% endcomment %}
+		<select id="change-country" name="change-country" class="select-box" data-placeholder="{{ site.copy.general.choose_country | t: }}&hellip;"></select>
+		<a href="javascript:void(0);" class="feature" id="{{ page.explore.id | t: }}-go">{{ site.copy.buttons.go | t: }}</a>
+		<div class="clearfix"></div>
+		{% if page.explore.description %}<p>{{ page.explore.description }}</p>{% endif %}
+		{% if page.explore.cta %}{% for cta in page.explore.cta %}<a href="{{ cta.href | t: }}" class="secondary{% if cta.class %} {{ cta.class | t: }}{% endif %}"{% if cta.rel %} rel="{{ cta.rel | t: }}" {% endif %}>{{ cta.text | t: }}</a>{% endfor %}{% endif %}
+	</div>
+</div>

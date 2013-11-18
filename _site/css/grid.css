@@ -1,0 +1,109 @@
+/* -- Begin grids ------------------------------------------ */
+
+.grid-wrap { margin-left: -2em; overflow: hidden; }
+.grid-col { float: left; padding-left: 2em; width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; }
+
+.half-gutter {margin-left: -1em; }
+.half-gutter .grid-col {padding-left: 1em; }
+
+.quarter-gutter {margin-left: -0.5em; }
+.quarter-gutter .grid-col {padding-left: 0.5em; }
+
+.quartertop{margin-top: 0.5em;}
+.no-bottom-gutter{margin-bottom: 0em;}
+
+
+/* -- If you want any columns to begin with -- */
+.col-full {
+  width: 100%; }
+
+.col-one-half {
+  width: 50%; }
+
+.col-one-third {
+  width: 33.333%; }
+
+.col-two-thirds {
+  width: 66.666%; }
+
+.col-one-quarter {
+  width: 25%; }
+
+.col-three-quarters {
+  width: 75%; }
+  
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.quarterbottom{
+		margin-bottom: 0em;
+	}
+	
+	.quarterbottom-m{
+		margin-bottom: -0.5em;
+	}
+	
+	.quartertop-m{
+		margin-top: 0em;
+	}
+	
+}
+
+/* -- Breakpoint (.bp1) ----------------------------------- */
+@media only screen and (min-width: 30em) {
+  .bp1-col-full {
+    width: 100%; }
+
+  .bp1-col-one-half {
+    width: 50%; }
+
+  .bp1-col-one-third {
+    width: 33.333%; }
+
+  .bp1-col-two-thirds {
+    width: 66.666%; }
+
+  .bp1-col-one-quarter {
+    width: 25%; }
+
+  .bp1-col-three-quarters {
+    width: 75%; } 
+}
+/* -- Breakpoint 2 (.bp2) ---------------------------------- */
+@media only screen and (min-width: 48em) {
+  .bp2-col-full {
+    width: 100%; }
+
+  .bp2-col-one-half {
+    width: 50%; }
+
+  .bp2-col-one-third {
+    width: 33.333%; }
+
+  .bp2-col-two-thirds {
+    width: 66.666%; }
+
+  .bp2-col-one-quarter {
+    width: 25%; }
+
+  .bp2-col-three-quarters {
+    width: 75%; } 
+}
+/* -- Breakpoint 3 (.bp3) ---------------------------------- */
+@media only screen and (min-width: 60em) {
+  .bp3-col-full {
+    width: 100%; }
+
+  .bp3-col-one-half {
+    width: 50%; }
+
+  .bp3-col-one-third {
+    width: 33.333%; }
+
+  .bp3-col-two-thirds {
+    width: 66.666%; }
+
+  .bp3-col-one-quarter {
+    width: 25%; }
+
+  .bp3-col-three-quarters {
+    width: 75%; } 
+}

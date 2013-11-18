@@ -1,0 +1,95 @@
+{% assign lang = "" | url_lang |remove: '.' %}
+
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="lt-ie9 lt-ie8" lang="en"><![endif]-->
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width" />
+        
+        <!-- seo items -->
+        <title>{{ site.copy.nml.what_if | t: | upcase }}{{ site.copy.general.underscore | t: }} {% if page.title %} {{ page.title | t: | upcase }} {% endif %} {% if page.subtitle %} | {{ page.subtitle | t: | upcase }} {% endif %} | {{ site.copy.nml.nissan | t: | upcase }}</title>
+        <meta name="description" content="{{ page.description | t: }}">
+        
+        <!-- share items -->
+        <meta property="og:title" content="{{ page.title | t: }}" />
+        <meta property="og:type" content="product" />
+        <meta property="og:description" content="{{ page.description | t: }}" />
+        <meta property="og:image" content="http://www.nissanwhatif.com/{{ site.image_root }}{{ page.image_dir | t: }}/fb-share.png" />
+        <meta property="og:site_name" content="{{ site.meta.name }}" />
+        <meta property="og:url" content="{{ site.meta.url }}/{{lang}}/" />
+
+		<!-- global styles -->
+        <link rel="stylesheet" href="{{ page.relative_root }}css/normalize.min.css" />
+        <link rel="stylesheet" href="{{ page.relative_root }}css/fonts.css" />
+        <link rel="stylesheet" href="{{ page.relative_root }}css/main.css" />
+        <link rel="stylesheet" href="{{ page.relative_root }}css/mobilemenu.css" />
+        {% if page.layout == 'homepage' %}<link rel="stylesheet" href="{{ page.relative_root }}css/feature.css" />{% endif %}
+        <link rel="stylesheet" href="{{ page.relative_root }}css/buttons.css" />
+        <link rel="stylesheet" href="{{ page.relative_root }}css/grid.css" />
+        <link rel="stylesheet" href="{{ page.relative_root }}css/modal.css" />
+        <link rel="stylesheet" href="{{ page.relative_root }}css/chosen.css" />
+        <link rel="stylesheet" href="{{ page.relative_root }}css/jquery.fancybox.css" />
+        {% if page.layout == 'feature' or page.layout == 'explore' %}
+            <!-- page styles -->
+            <link rel="stylesheet" href="{{ page.relative_root }}css/gallery.css" />
+        {% endif %}
+        {% unless page.layout == 'homepage' %}
+            <!-- share script -->
+            <script type="text/javascript">var switchTo5x=true;</script>
+            <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js">  </script>        
+            <script type="text/javascript" src="{{ page.relative_root }}js/sharethis/sharethis.js">  </script>
+        {% endunless %}
+        <!--[if lt IE 9]>
+        	<link rel="stylesheet" href="{{ page.relative_root }}css/grid.ie.css" />
+        	<script src="{{ page.relative_root }}js/libs/html5.respond.min.js">  </script>        
+        <![endif]-->
+    </head>
+    <body class="{{ lang }}">
+    <div id="menu" style="display:none">
+    	<ul class="accordion">
+    	 	<li id="a-viewall" class="acc-viewall">
+    	 	    <a href="{{ page.relative_root }}{{ lang }}/explore_innovations.html">{{ site.explore_filters.view_all | t: }}</a>
+    	 	</li>
+    	 	<li id="a-performace" class="acc-sub">
+    	 	    <a href="#a-performace">{{ site.explore_filters.performance | t: }}</a>
+    	 		<ul class="sub-menu">
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/explore_innovations.html?tag=performance">{{ site.explore_filters.view_all_performance | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/nissan_gt_r.html">{{ site.explore_filters.nissan_gt_r | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/director_of_excitement.html">{{ site.explore_filters.director_of_excitement | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/deltawing.html">{{ site.explore_filters.deltawing | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/leaf_nismo_rc.html">{{ site.explore_filters.leaf_nismo_rc | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/project_370z.html">{{ site.explore_filters.project_370z | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/juke_r.html">{{ site.explore_filters.juke_r | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/the_planet_zero.html">{{ site.explore_filters.the_planet_zero | t: }}</a></li>
+    	        </ul>
+    	 	</li>
+    	 	<li id="a-technology" class="acc-sub">
+    	 	    <a href="#a-technology">{{ site.explore_filters.technology | t: }}</a>
+    	 		<ul class="sub-menu">
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/explore_innovations.html?tag=technology">{{ site.explore_filters.view_all_technology | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/around_view_monitor.html">{{ site.explore_filters.around_view_monitor | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/remote_climate_control.html">{{ site.explore_filters.remote_climate_control | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/remote_charge.html">{{ site.explore_filters.remote_charge | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/gt_academy.html">{{ site.explore_filters.gt_academy | t: }}</a></li>
+    	 	   </ul>
+    	 	</li>
+    	 	<li id="a-design" class="acc-sub">
+    	 	    <a href="#a-sustainability">{{ site.explore_filters.design | t: }}</a>
+    	 		<ul class="sub-menu">
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/explore_innovations.html?tag=design">{{ site.explore_filters.view_all_design | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/taxi_of_tomorrow.html">{{ site.explore_filters.taxi_of_tomorrow | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/juke_box.html">{{ site.explore_filters.juke_box | t: }}</a></li>
+    	 	   </ul>
+    	 	</li>
+    	 	<li id="a-sustainability" class="acc-sub">
+    	 	    <a href="#a-sustainability">{{ site.explore_filters.sustainability | t: }}</a>
+    	 		<ul class="sub-menu">
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/explore_innovations.html?tag=sustainability">{{ site.explore_filters.view_all_sustainability | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/sunrise_to_sunset.html">{{ site.explore_filters.nissan_leaf | t: }}</a></li>
+    	 			<li><a href="{{ page.relative_root }}{{ lang }}/feature/world_without_petrol.html">{{ site.explore_filters.world_without_petrol | t: }}</a></li>
+    	 	   </ul>
+    	 	</li>
+    	</ul>
+    </div>

@@ -1,0 +1,946 @@
+/*! fancyBox v2.1.0 fancyapps.com | fancyapps.com/fancybox/#license */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none !important;
+	vertical-align: top;
+}
+
+.fancybox-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8020;
+}
+
+.fancybox-skin {
+	position: relative;
+	background: #000;
+	color: #FFF;
+	text-shadow: none;
+	padding: 0px 0 75px !important;
+	margin: 0px !important;
+}
+
+.fancybox-skin-modal{
+	padding: 0 !important;
+}
+
+.fancybox-opened {
+	z-index: 8030;
+}
+
+.fancybox-outer, .fancybox-inner {
+	position: relative;
+}
+
+.fancybox-inner {
+	overflow: hidden;
+}
+
+.fancybox-type-iframe .fancybox-inner {
+	-webkit-overflow-scrolling: touch;
+}
+
+.fancybox-error {
+	color: #FFF;
+	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.fancybox-image, .fancybox-iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.fancybox-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.fancybox-prev, .fancybox-prev span, .fancybox-next, .fancybox-next span {
+	background-image: url('../img/fancybox/fancybox_sprite.png');
+}
+
+
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -22px;
+	margin-left: -22px;
+	background-position: 0 -108px;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: 8060;
+}
+
+#fancybox-loading div {
+	width: 44px;
+	height: 44px;
+	background: url('../img/fancybox/fancybox_loading.gif') center center no-repeat;
+}
+
+.fancybox-close {
+	position: absolute;
+	top: 0px;
+	right: 1em;
+	width: 78px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.png') no-repeat 0 0;
+}
+
+.fancybox-close:hover {
+	background: url('../img/fancybox/fancybox_sprite.png') no-repeat 0 -31px;
+}
+
+.fancybox-closer {
+	position: absolute;
+	top: -29px;
+	right: 0em;
+	width: 78px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.png') no-repeat 0 0;
+}
+
+.fancybox-closer:hover {
+	background: url('../img/fancybox/fancybox_sprite.png') no-repeat 0 -31px;
+}
+
+
+.fancybox-prev {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 78px;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.png') no-repeat 0 -100px;
+}
+
+.fancybox-prev:hover {
+	background: url('../img/fancybox/fancybox_sprite.png') no-repeat 0 -175px;
+}
+
+.fancybox-next {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.png') no-repeat -78px -100px;
+}
+
+.fancybox-next:hover {
+	background: url('../img/fancybox/fancybox_sprite.png') no-repeat -78px -175px;
+}
+
+
+.fancybox-share {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	left: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.png') no-repeat -156px -100px;
+}
+
+.fancybox-share:hover {
+	background: url('../img/fancybox/fancybox_sprite.png') no-repeat -156px -175px;
+}
+
+/* French */
+
+.fr .fancybox-close {
+	position: absolute;
+	top: 0px;
+	right: 1em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.fr.png') no-repeat 0 0;
+}
+
+.fr .fancybox-close:hover {
+	background: url('../img/fancybox/fancybox_sprite.fr.png') no-repeat 0 -31px;
+}
+
+.fr .fancybox-closer {
+	position: absolute;
+	top: -29px;
+	right: 0em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.fr.png') no-repeat 0 0;
+}
+
+.fr .fancybox-closer:hover {
+	background: url('../img/fancybox/fancybox_sprite.fr.png') no-repeat 0 -31px;
+}
+
+
+.fr .fancybox-prev {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 78px;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.fr.png') no-repeat 0 -100px;
+}
+
+.fr .fancybox-prev:hover {
+	background: url('../img/fancybox/fancybox_sprite.fr.png') no-repeat 0 -175px;
+}
+
+.fr .fancybox-next {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.fr.png') no-repeat -78px -100px;
+}
+
+.fr .fancybox-next:hover {
+	background: url('../img/fancybox/fancybox_sprite.fr.png') no-repeat -78px -175px;
+}
+
+
+.fr .fancybox-share {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	left: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.fr.png') no-repeat -156px -100px;
+}
+
+.fr .fancybox-share:hover {
+	background: url('../img/fancybox/fancybox_sprite.fr.png') no-repeat -156px -175px;
+}
+
+/* Spanish */
+
+.es .fancybox-close {
+	position: absolute;
+	top: 0px;
+	right: 1em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.es.png') no-repeat 0 0;
+}
+
+.es .fancybox-close:hover {
+	background: url('../img/fancybox/fancybox_sprite.es.png') no-repeat 0 -31px;
+}
+
+.es .fancybox-closer {
+	position: absolute;
+	top: -29px;
+	right: 0em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.es.png') no-repeat 0 0;
+}
+
+.es .fancybox-closer:hover {
+	background: url('../img/fancybox/fancybox_sprite.es.png') no-repeat 0 -31px;
+}
+
+
+.es .fancybox-prev {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 78px;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.es.png') no-repeat 0 -100px;
+}
+
+.es .fancybox-prev:hover {
+	background: url('../img/fancybox/fancybox_sprite.es.png') no-repeat 0 -175px;
+}
+
+.es .fancybox-next {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.es.png') no-repeat -78px -100px;
+}
+
+.es .fancybox-next:hover {
+	background: url('../img/fancybox/fancybox_sprite.es.png') no-repeat -78px -175px;
+}
+
+
+.es .fancybox-share {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	left: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.es.png') no-repeat -156px -100px;
+}
+
+.es .fancybox-share:hover {
+	background: url('../img/fancybox/fancybox_sprite.es.png') no-repeat -156px -175px;
+}
+
+/* Italian */
+
+.it .fancybox-close {
+	position: absolute;
+	top: 0px;
+	right: 1em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.it.png') no-repeat 0 0;
+}
+
+.it .fancybox-close:hover {
+	background: url('../img/fancybox/fancybox_sprite.it.png') no-repeat 0 -31px;
+}
+
+.it .fancybox-closer {
+	position: absolute;
+	top: -29px;
+	right: 0em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.it.png') no-repeat 0 0;
+}
+
+.it .fancybox-closer:hover {
+	background: url('../img/fancybox/fancybox_sprite.it.png') no-repeat 0 -31px;
+}
+
+
+.it .fancybox-prev {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 78px;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.it.png') no-repeat 0 -100px;
+}
+
+.it .fancybox-prev:hover {
+	background: url('../img/fancybox/fancybox_sprite.it.png') no-repeat 0 -175px;
+}
+
+.it .fancybox-next {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.it.png') no-repeat -78px -100px;
+}
+
+.it .fancybox-next:hover {
+	background: url('../img/fancybox/fancybox_sprite.it.png') no-repeat -78px -175px;
+}
+
+
+.it .fancybox-share {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	left: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.it.png') no-repeat -156px -100px;
+}
+
+.it .fancybox-share:hover {
+	background: url('../img/fancybox/fancybox_sprite.it.png') no-repeat -156px -175px;
+}
+
+/* Portuguese */
+
+.pt .fancybox-close {
+	position: absolute;
+	top: 0px;
+	right: 1em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.pt.png') no-repeat 0 0;
+}
+
+.pt .fancybox-close:hover {
+	background: url('../img/fancybox/fancybox_sprite.pt.png') no-repeat 0 -31px;
+}
+
+.pt .fancybox-closer {
+	position: absolute;
+	top: -29px;
+	right: 0em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.pt.png') no-repeat 0 0;
+}
+
+.pt .fancybox-closer:hover {
+	background: url('../img/fancybox/fancybox_sprite.pt.png') no-repeat 0 -31px;
+}
+
+
+.pt .fancybox-prev {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 78px;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.pt.png') no-repeat 0 -100px;
+}
+
+.pt .fancybox-prev:hover {
+	background: url('../img/fancybox/fancybox_sprite.pt.png') no-repeat 0 -175px;
+}
+
+.pt .fancybox-next {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.pt.png') no-repeat -78px -100px;
+}
+
+.pt .fancybox-next:hover {
+	background: url('../img/fancybox/fancybox_sprite.pt.png') no-repeat -78px -175px;
+}
+
+
+.pt .fancybox-share {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	left: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.pt.png') no-repeat -156px -100px;
+}
+
+.pt .fancybox-share:hover {
+	background: url('../img/fancybox/fancybox_sprite.pt.png') no-repeat -156px -175px;
+}
+
+.fancybox-tmp {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	visibility: hidden;
+}
+
+/* Russian */
+
+.ru .fancybox-close {
+	position: absolute;
+	top: 0px;
+	right: 1em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.ru.png') no-repeat 0 0;
+}
+
+.ru .fancybox-close:hover {
+	background: url('../img/fancybox/fancybox_sprite.ru.png') no-repeat 0 -31px;
+}
+
+.ru .fancybox-closer {
+	position: absolute;
+	top: -29px;
+	right: 0em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.ru.png') no-repeat 0 0;
+}
+
+.ru .fancybox-closer:hover {
+	background: url('../img/fancybox/fancybox_sprite.ru.png') no-repeat 0 -31px;
+}
+
+
+.ru .fancybox-prev {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 78px;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.ru.png') no-repeat 0 -100px;
+}
+
+.ru .fancybox-prev:hover {
+	background: url('../img/fancybox/fancybox_sprite.ru.png') no-repeat 0 -175px;
+}
+
+.ru .fancybox-next {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.ru.png') no-repeat -78px -100px;
+}
+
+.ru .fancybox-next:hover {
+	background: url('../img/fancybox/fancybox_sprite.ru.png') no-repeat -78px -175px;
+}
+
+
+.ru .fancybox-share {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	left: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.ru.png') no-repeat -156px -100px;
+}
+
+.ru .fancybox-share:hover {
+	background: url('../img/fancybox/fancybox_sprite.ru.png') no-repeat -156px -175px;
+}
+
+/* Russian */
+
+.de .fancybox-close {
+	position: absolute;
+	top: 0px;
+	right: 1em;
+	width: 109px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.de.png') no-repeat 0 0;
+}
+
+.de .fancybox-close:hover {
+	background: url('../img/fancybox/fancybox_sprite.de.png') no-repeat 0 -31px;
+}
+
+.de .fancybox-closer {
+	position: absolute;
+	top: -29px;
+	right: 0em;
+	width: 109px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.de.png') no-repeat 0 0;
+}
+
+.de .fancybox-closer:hover {
+	background: url('../img/fancybox/fancybox_sprite.de.png') no-repeat 0 -31px;
+}
+
+
+.de .fancybox-prev {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 78px;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.de.png') no-repeat 0 -100px;
+}
+
+.de .fancybox-prev:hover {
+	background: url('../img/fancybox/fancybox_sprite.de.png') no-repeat 0 -175px;
+}
+
+.de .fancybox-next {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.de.png') no-repeat -78px -100px;
+}
+
+.de .fancybox-next:hover {
+	background: url('../img/fancybox/fancybox_sprite.de.png') no-repeat -78px -175px;
+}
+
+
+.de .fancybox-share {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	left: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.de.png') no-repeat -156px -100px;
+}
+
+.de .fancybox-share:hover {
+	background: url('../img/fancybox/fancybox_sprite.de.png') no-repeat -156px -175px;
+}
+
+/* Japaneese */
+
+.jp .fancybox-close {
+	position: absolute;
+	top: 0px;
+	right: 1em;
+	width: 69px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.jp.png') no-repeat 0 0;
+}
+
+.jp .fancybox-close:hover {
+	background: url('../img/fancybox/fancybox_sprite.jp.png') no-repeat 0 -31px;
+}
+
+.jp .fancybox-closer {
+	position: absolute;
+	top: -29px;
+	right: 0em;
+	width: 69px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.jp.png') no-repeat 0 0;
+}
+
+.jp .fancybox-closer:hover {
+	background: url('../img/fancybox/fancybox_sprite.jp.png') no-repeat 0 -31px;
+}
+
+
+.jp .fancybox-prev {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 78px;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.jp.png') no-repeat 0 -100px;
+}
+
+.jp .fancybox-prev:hover {
+	background: url('../img/fancybox/fancybox_sprite.jp.png') no-repeat 0 -175px;
+}
+
+.jp .fancybox-next {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.jp.png') no-repeat -78px -100px;
+}
+
+.jp .fancybox-next:hover {
+	background: url('../img/fancybox/fancybox_sprite.jp.png') no-repeat -78px -175px;
+}
+
+
+.jp .fancybox-share {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	left: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.jp.png') no-repeat -156px -100px;
+}
+
+.jp .fancybox-share:hover {
+	background: url('../img/fancybox/fancybox_sprite.jp.png') no-repeat -156px -175px;
+}
+
+/* Chinese */
+
+.zh .fancybox-close {
+	position: absolute;
+	top: 0px;
+	right: 1em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.zh.png') no-repeat 0 0;
+}
+
+.zh .fancybox-close:hover {
+	background: url('../img/fancybox/fancybox_sprite.zh.png') no-repeat 0 -31px;
+}
+
+.zh .fancybox-closer {
+	position: absolute;
+	top: -29px;
+	right: 0em;
+	width: 89px;
+	height: 29px;
+	cursor: pointer;
+	z-index: 10001;
+	display: block;
+	background: url('../img/fancybox/fancybox_sprite.zh.png') no-repeat 0 0;
+}
+
+.zh .fancybox-closer:hover {
+	background: url('../img/fancybox/fancybox_sprite.zh.png') no-repeat 0 -31px;
+}
+
+
+.zh .fancybox-prev {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 78px;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.zh.png') no-repeat 0 -100px;
+}
+
+.zh .fancybox-prev:hover {
+	background: url('../img/fancybox/fancybox_sprite.zh.png') no-repeat 0 -175px;
+}
+
+.zh .fancybox-next {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	right: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.zh.png') no-repeat -78px -100px;
+}
+
+.zh .fancybox-next:hover {
+	background: url('../img/fancybox/fancybox_sprite.zh.png') no-repeat -78px -175px;
+}
+
+
+.zh .fancybox-share {
+	position: absolute;
+	bottom:-60px;
+	width: 78px;
+	height: 75px;
+	cursor: pointer;
+	z-index: 8040;
+	left: 0;
+	bottom: -75px;
+	background: url('../img/fancybox/fancybox_sprite.zh.png') no-repeat -156px -100px;
+}
+
+.zh .fancybox-share:hover {
+	background: url('../img/fancybox/fancybox_sprite.zh.png') no-repeat -156px -175px;
+}
+
+.fancybox-tmp {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	visibility: hidden;
+}
+
+/* Overlay helper */
+
+.fancybox-lock {
+	overflow: hidden;
+}
+
+.fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display: none;
+	z-index: 8010;
+	background: url('../img/fancybox/fancybox_overlay.png');
+}
+
+.fancybox-overlay-fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.fancybox-lock .fancybox-overlay {
+	overflow: auto;
+	overflow-y: scroll;
+}
+
+/* Title helper */
+
+.fancybox-title {
+	visibility: hidden;
+	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	position: relative;
+	text-shadow: none;
+	z-index: 8050;
+}
+
+.fancybox-opened .fancybox-title {
+	/*visibility: visible;*/
+}
+
+.fancybox-title-float-wrap {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	margin-bottom: -35px;
+	z-index: 8050;
+	text-align: center;
+}
+
+.fancybox-title-float-wrap .child {
+	display: inline-block;
+	margin-right: -100%;
+	padding: 2px 20px;
+	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
+	background: rgba(0, 0, 0, 0.8);
+	text-shadow: 0 1px 2px #222;
+	color: #FFF;
+	font-weight: bold;
+	line-height: 24px;
+	white-space: nowrap;
+}
+
+.fancybox-title-outside-wrap {
+	position: relative;
+	margin-top: 10px;
+	color: #fff;
+}
+
+.fancybox-title-inside-wrap {
+	padding-top: 10px;
+}
+
+.fancybox-title-over-wrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	padding: 10px;
+	background: #000;
+	background: rgba(0, 0, 0, .8);
+}

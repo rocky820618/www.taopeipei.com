@@ -1,0 +1,159 @@
+{% include global/doc_head.html %}
+
+
+<div class="header-container noborder ">
+	<div class="wrapper-wide borderbottom">
+		<header class="wrapper clearfix noborder">
+			<a href="../index.html" id="logo" class="trackcommon-01_icon">{{ site.copy.nml.nissan | t: }} {{ site.copy.nml.shift | t: }}{{ site.copy.general.underscore | t: }}</a>
+			<div class="title">
+				<a href="../index.html" class="trackcommon-01">{{ site.copy.general.home | t: }}</a>
+				<a href="../explore_innovations.html" class="trackcommon-01b">{{ site.copy.general.explore_innovations | t: }}</a>
+			</div>
+			<a href="#" class="menu-trigger"></a>
+		</header>
+	</div>
+</div>
+
+<div class="main-container clearfix">
+	<div class="wrapper-wide">
+		<div class="main wrapper clearfix">
+			<div class="page-heading clearfix">
+				<div class="ph-left">
+					<h2>{{ site.copy.nml.what_if | t: }}{{ site.copy.general.underscore | t: }}</h2>
+					<h3>{{ page.title | t: }}</h3>
+				</div>
+				<div class="ph-right">
+					<a href="javascript:window.history.go(-1);" class="back trackcommon-03">{{ site.copy.buttons.back | t: }}</a>
+				</div>
+			</div>
+			<article>
+				<header class="clearfix">
+					<h1>{{ page.subtitle | t: }}</h1>
+					{% if page.image %}<img src="{{ page.relative_root | t: }}{{ site.image_root }}{{ page.image_dir | t: }}/{{ page.image | t: }}" alt="{{ page.subtitle | t: }}" />{% endif %}
+					<p>{{ page.description | t: }}</p>
+				</header>
+			</article>
+
+			<!--  RCC Special Elements -->
+				<!-- Remote Activation -->
+				{% if page.remote_activation %}
+					{% include feature/remote_activation.html %}
+				{% endif %}
+				
+				<!-- Battery Life -->
+				{% if page.battery_life %}
+					{% include feature/battery_life.html %}
+				{% endif %}
+				
+				<!-- Maximize Effort -->
+				{% if page.climate_display %}
+					{% include feature/climate_display.html %}
+				{% endif %}
+				
+				<!-- Stay Connected -->
+				{% if page.carwings %}
+					{% include feature/carwings.html %}
+				{% endif %}
+			<!-- !RCC Special Elements -->
+			
+			<!--  BEV Special Elements -->
+				<!-- Four Cameras -->
+				{% if page.four_cameras %}
+					{% include feature/four_cameras.html %}
+				{% endif %}
+				
+				{% if page.birds_eye_view %}
+					{% include feature/birds_eye.html %}
+				{% endif %}
+				
+				{% if page.switch_views %}
+					{% include feature/switch_views.html %}
+				{% endif %}
+			<!-- !BEV Special Elements -->
+			
+			<!--  GT-R Special Elements -->
+				<!-- Intelligent Design -->
+				{% if page.intelligent_design %}
+					{% include feature/intelligent_design.html %}
+				{% endif %}
+				
+				{% if page.unrivaled_supercar %}
+					{% include feature/unrivaled_supercar.html %}
+				{% endif %}
+			<!-- !GT-R Special Elements -->
+			
+			<!--  Remote Charge Special Elements -->
+				{% if page.battery_status %}
+					{% include feature/battery_status.html %}
+				{% endif %}
+				
+				{% if page.automatic_alerts %}
+					{% include feature/automatic_alerts.html %}
+				{% endif %}
+				
+				{% if page.charging_stations %}
+					{% include feature/charging_stations.html %}
+				{% endif %}
+			
+			<!-- !Remote Charge Special Elements -->
+			
+			<!-- Videos -->
+			{% if page.videos %}
+				{% include feature/videos.html %}
+			{% endif %}
+			
+			{% if page.videos_kong %}
+				{% include feature/videos_kong.html %}
+			{% endif %}
+
+
+			<!--  The Ultimate Taxi Ride Special Elements -->
+			{% if page.utr %}
+				{% include feature/utr.html %}
+			{% endif %}
+			<!-- !The Ultimate Taxi Ride Special Elements -->
+
+			<!-- Gallery  -->
+			{% if page.gallery %}
+				{% include feature/gallery.html %}
+			{% endif %}
+			
+			{% if page.gallery_kong %}
+				{% include feature/gallery_kong.html %}
+			{% endif %}
+
+			<article class="socialshare clearfix">
+				<div class="article-left">
+					
+					{% for cta in page.cta %}
+						
+						<a class="feature{% if cta.class %} {{ cta.class | t: }}{% endif %}{% unless forloop.first %} secondary{% endunless %}"{% if cta.rel %} rel="{{ cta.rel | t: }}" {% endif %}href="{{ cta.href | t: }}">{% if cta.strong_text %}<strong>{{ cta.strong_text | t: }}</strong>{% endif %}{{ cta.text | t: }}{% if cta.strong_text_after %}<strong>{{ cta.strong_text_after | t: }}</strong>{% endif %}</a>
+						
+					{% endfor %}
+					
+				</div>
+				<div class="article-right">
+					<div class="share-box">
+						<a href="javascript:void(0);" class="share">{{ site.copy.general.share | t: }}</a>
+						<div class="share-flyout">
+							<span class='st_facebook_large trackcommon-04-facebook' displayText='Facebook'></span> 
+							<span class='st_twitter_large trackcommon-04-twitter' displayText='Tweet'></span> 
+							<span class='st_pinterest_large trackcommon-04-pinterest' displayText='Pinterest'></span> 
+							<span class='st_googleplus_large trackcommon-04-googleplus' displayText='Google +'></span> 
+							<span class='st_email_large  trackcommon-04-email' displayText='Email'></span> 
+							<span class="tip"></span>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<div class="back-bottom">
+				<a href="javascript:window.history.go(-1);" class="back trackcommon-03">{{ site.copy.buttons.back | t: }}</a>
+			</div>
+		</div> <!-- #main -->
+	</div>
+</div> <!-- #main-container -->
+         
+{% include global/footer.html %}
+
+{% include global/doc_foot.html %}

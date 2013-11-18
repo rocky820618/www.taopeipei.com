@@ -1,0 +1,51 @@
+        <div class="footer-container bkgwhite">
+        	<div class="wrapper-wide">
+            <footer class="wrapper">
+               	<nav>
+               		<ul>
+               			<li><a href="{{ page.relative_root | t: }}{{ lang }}/index.html" class="trackcommon-footer-home">{{ site.copy.general.home | t: }}</a></li>
+               			{% if lang == 'jp' %}
+               			<li><a href="http://www.nissan-global.com/JP/SITE_INFO/PRIVACY/" class="trackcommon-footer-privacy" rel="external">{{ site.copy.general.privacy_legal | t: }}</a></li>
+               			<li><a href="http://www.nissan-global.com/JP/SITE_INFO/PERSONAL/" class="trackcommon-footer-handling" rel="external">{{ site.copy.general.handling_pii | t: }}</a></li>
+               			{% else %}
+               			<li><a href="http://www.nissan-global.com/EN/SITE_INFO/PRIVACY/" class="trackcommon-footer-privacy" rel="external">{{ site.copy.general.privacy_legal | t: }}</a></li>
+               			<li><a href="http://www.nissan-global.com/EN/SITE_INFO/PERSONAL/" class="trackcommon-footer-handling" rel="external">{{ site.copy.general.handling_pii | t: }}</a></li>
+               			{% endif %}
+               		</ul>
+               	</nav>
+               	<div class="sociallinks">
+               		<ul>
+               			<li><a href="http://www.facebook.com/Nissan" class="facebook trackcommon-footer-facebook" rel="external">{{ site.copy.social.facebook | t: }}</a></li>
+               			<li><a href="https://twitter.com/Nissan" class="twitter trackcommon-footer-twitter"  rel="external">{{ site.copy.social.twitter | t: }}</a></li>
+               			<li><a href="http://www.youtube.com/user/NissanNewsroom" class="youtube trackcommon-footer-youtube"  rel="external">{{ site.copy.social.youtube | t: }}</a></li>
+               		</ul>
+               	</div>
+            </footer>
+            </div>
+        </div>
+
+    {% if page.layout == 'homepage' %}
+  		<!-- hidden layers  -->
+  		<div id="modal-exception" class="modal-data clearfix grid-wrap">
+  			<div class="grid-col bp1-col-full bp2-col-full">
+  				<h2>BROWSER UPGADE RECOMMENDED</h2>
+  				<p class="warn"><span class="warnred">Did you know that your version of Internet Explorer is out of date?</span> To get the best possible 
+  				experience from our website, we recommend you upgrade to the most recent version of 
+  				Internet Explorer or another web browser. A list of popular web browsers can be found below.</p>
+  				<p class="warnupper">Click on an icon to go to the download page:</p>
+  				<div class="clearfix"></div>
+  				<div class="logos">
+  					<a href="http://www.mozilla.org/en-US/firefox/all.html" class="firefox logo" rel="external">Firefox</a>
+  					<a href="https://www.google.com/intl/en/chrome/browser/" class="chrome logo" rel="external">Chrome</a>
+  					<a href="http://support.apple.com/downloads/#safari" class="safari logo" rel="external">Safari</a>
+  					<a href="http://windows.microsoft.com/en-US/internet-explorer/download-ie" class="ie logo" rel="external">Internet Explorer</a>
+  				</div>
+  				<div class="clearfix"></div>
+  			</div>
+  		</div>
+  		<!-- #hidden layers -->
+    {% elsif page.explore %}
+      <!-- hidden layers  -->
+      {% include feature/explore.html %}
+      <!-- #hidden layers -->
+    {% endif %}

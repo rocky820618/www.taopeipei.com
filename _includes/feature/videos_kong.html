@@ -1,0 +1,20 @@
+{% assign count = page.videos_kong.size %}
+<article class="videos clearfix">
+	<h2>{{ site.copy.general.videos_kong | t: }}</h2>
+	<ul class="grid-wrap{% if count > 1 %} quarter-gutter{% endif %}">
+		{% for item in page.videos_kong %}
+			<li class="grid-col{% if count == 1 %} bp1-col-full bp2-col-full{% elsif count == 2 %} bp1-col-one-half bp2-col-one-half{% elsif count == 3 %} bp1-col-one-third bp2-col-one-third{% endif %}">
+				<a class="video trackfeature-video" id="video{{ forloop.index }}" href="{{ item.href | t: }}" name="{{ item.title | t: }}"  title="Video - {{ item.title | t: }}">
+				<img src="{{ page.relative_root | t: }}{{ site.image_root }}{{ page.image_dir | t:  }}/{{ item.image | t: }}" alt="{{ item.title | t: }}"  />
+				<span class="icon"></span>
+				<div class="highlight"></div>
+				</a>
+				<h3>{{ item.title | t: }}</h3>
+				{% if item.description %}<p>{{ item.description | t: }}</p>{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+	{% if page.videos_more %}
+		<a class="linkout{% if page.videos_more.class %} {{ page.videos_more.class | t: }}{% endif %}"{% if page.videos_more.rel %} rel="{{ page.videos_more.rel | t: }}" {% endif %}href="{{ page.videos_more.href | t: }}">{{ page.videos_more.text | t: }}</a><br /><br />
+	{% endif %}
+</article>

@@ -1,0 +1,91 @@
+#modal-director, #modal-jukebox, #modal-project370z, #modal-leaf, #modal-exception, #modal-language{
+	height: 250px;
+	display: none;
+	background: #FFF;
+	color: #222;
+}
+
+.select-box{
+	width: 19em;
+	float: left;
+}
+
+.chzn-container{
+	float: left;
+	margin-right: 0.5em;
+}
+
+.modal-data{
+	padding: 2.50em;
+	width: 27.5em;
+}
+
+.modal-data h2{
+	font: normal 1.375em/1.5em 'NissanAGBold';
+}
+
+.modal-data p{
+	font-size: 1.125em;
+	line-height: 1.125em;
+}
+
+#modal-language h2{
+	text-transform: uppercase;
+}
+
+.ls-link{
+	color: #222;
+	float: left;
+	width: 12em;
+	margin-bottom: 1.5em;
+	padding-left: 0.75em;
+	margin-right: 1em;
+	font: normal 0.875em/1.1em 'NissanAGRegular';
+	background: transparent url('../img/hubnav-sprite.png') no-repeat -1439px -368px;
+}
+
+.ls-link:hover{
+	background: transparent url('../img/hubnav-sprite.png') no-repeat -1439px -407px;
+}
+
+.ls-link-active{
+	color: #C71444;
+	background: transparent url('../img/hubnav-sprite.png') no-repeat -1439px -407px;
+}
+
+@media only screen and (min-width: 320px) {
+
+	.modal-data p{
+		font-size: 1.0em;
+		line-height: 1.0em;
+	}
+	
+
+	.modal-data{
+		padding: 1.25em;
+		width: 20em;
+	}
+	
+	.ls-link{
+		width: 6em;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	.modal-data p{
+		font-size: 1.125em;
+		line-height: 1.125em;
+	}
+	
+
+	.modal-data{
+		padding: 2.50em;
+		width: 27.5em;
+	}
+	
+	.ls-link{
+		width: 12em;
+	}
+	
+}

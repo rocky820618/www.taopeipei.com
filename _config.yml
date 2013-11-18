@@ -1,0 +1,1696 @@
+auto: true
+server: true
+
+env: dev
+root: /
+image_root: img/
+
+meta:
+  name:
+    en: Nissan What If_
+    es: Nissan ¿Qué pasaría si_
+    ru: Nissan А если бы_
+    zh: 日产大胆畅想_
+    pt: Nissan E Se_
+    fr: Nissan Et si_
+    de: Was wäre, wenn …
+    it: Nissan What If_
+    jp: 日産　もし_
+  url: 'http://nissanwhatif.com'
+
+languages:
+  - key: english
+    dir: en
+    name: English
+      
+  - key: spanish
+    dir: es
+    name: Español
+      
+  - key: russian
+    dir: ru
+    name: Русский
+      
+  - key: chinese
+    dir: zh
+    name: 中文
+
+  - key: portugese
+    dir: pt
+    name: Português
+
+  - key: french
+    dir: fr
+    name: Français
+
+  - key: german
+    dir: de
+    name: Deutsch
+
+  - key: italian
+    dir: it
+    name: Italiano
+
+  - key: japanese
+    dir: jp
+    name: 日本語
+
+explore_filters:
+  view_all:
+    en: View All
+    es: Ver todo
+    ru: Посмотреть все
+    zh: 查看全部
+    pt: Ver tudo
+    fr: Tout afficher
+    de: Alle anzeigen
+    it: Mostra tutte
+    jp: すべてを見る
+  performance:
+    en: Performance
+    es: Rendimiento
+    ru: Эффективность
+    zh: 性能
+    pt: Desempenho
+    fr: Performance
+    de: Leistung
+    it: Prestazioni
+    jp: パフォーマンス
+  view_all_performance:
+    en: View all performance
+    es: Ver todo el rendimiento
+    ru: Посмотреть все по эффективности
+    zh: 查看全部性能
+    pt: Ver todo o desempenho
+    fr: Tout afficher sur la performance
+    de: Leistung&#58; Alles anzeigen
+    it: Mostra tutte le prestazioni
+    jp: すべてのパフォーマンスを見る
+  technology:
+    en: Technology
+    es: Tecnología
+    ru: Технология
+    zh: 技术
+    pt: Tecnologia
+    fr: Technologie
+    de: Technologie
+    it: Tecnologia
+    jp: テクノロジー
+  view_all_technology:
+    en: view all technology
+    es: ver toda la tecnología
+    ru: посмотреть все по технологиям
+    zh: 查看全部技术
+    pt: Ver toda a tecnologia
+    fr: tout afficher sur la technologie
+    de: Technologie&#58; Alles anzeigen
+    it: Tecnologia
+    jp: すべてのテクノロジーを見る
+  design:
+    en: Design
+    es: Diseño
+    ru: Дизайн
+    zh: 设计
+    pt: Design
+    fr: Conception
+    de: Design
+    it: Design
+    jp: デザイン
+  view_all_design:
+    en: View All Design
+    es: ver todo el diseño
+    ru: посмотреть все по дизайну
+    zh: 查看全部设计
+    pt: Ver todo o design
+    fr: tout afficher sur la conception
+    de: Design&#58; Alles anzeigen
+    it: Mostra tutto il design
+    jp: すべてのデザインを見る
+  sustainability:
+    en: Sustainability
+    es: Sostenibilidad
+    ru: Экологичность
+    zh: 可持续性表现
+    pt: Sustentabilidade
+    fr: Durabilité
+    de: Nachhaltigkeit
+    it: Sostenibilità
+    jp: サステナビリティ
+  view_all_sustainability:
+    en: view all sustainability
+    es: ver toda la sostenibilidad
+    ru: посмотреть все по экологичности
+    zh: 查看全部可持续性表现
+    pt: Ver toda a sustentabilidade
+    fr: tout afficher sur la durabilité
+    de: Nachhaltigkeit&#58; Alles anzeigen
+    it: Mostra tutta la sostenibilità
+    jp: すべてのサステナビリティを見る
+  nissan_gt_r:
+    en: Nissan GT-R
+    es: Nissan GT-R
+    ru: Nissan GT-R
+    zh: 日产 GT-R
+    pt: Nissan GT-R
+    fr: Nissan GT-R
+    de: DER NISSAN GT-R
+    it: Nissan GT-R
+    jp: 日産GT−R
+  around_view_monitor:
+    en: Around view monitor
+    es: MONITOR DE VISIÓN PANORÁMICA
+    ru: МОНИТОР КРУГОВОГО ОБЗОРА
+    zh: 全景影像监控系统
+    pt: MONITOR DA ÁREA ENVOLVENTE
+    fr: AROUND VIEW MONITOR
+    de: BILDSCHIRM MIT RUNDUMSICHT
+    it: SCHERMO A 360° GRADI
+    jp: アラウンドビューモニター
+  remote_climate_control:
+    en: Remote climate control
+    es: CONTROL REMOTO DE CLIMATIZACIÓN
+    ru: ДИСТАНЦИОННЫЙ КЛИМАТ-КОНТРОЛЬ
+    zh: 远程空调
+    pt: CONTROLO DE CLIMATIZAÇÃO REMOTO
+    fr: CLIMATISATION À DISTANCE
+    de: AUFLADUNG PER FERNSTEUERUNG
+    it: CARREGAMENTO REMOTO
+    jp: 気温のリモート操作
+  remote_charge:
+    en: Remote charge
+    es: CARGA REMOTA
+    ru: ДИСТАНЦИОННАЯ ЗАРЯДКА
+    zh: 远程充电
+    pt: CARREGAMENTO REMOTO
+    fr: CHARGE À DISTANCE
+    de: AUFLADUNG PER FERNSTEUERUNG
+    it: RICARICA REMOTA
+    jp: リモート充電
+  nissan_leaf:
+    en: Nissan LEAF
+    es: Nissan LEAF
+    ru: Nissan LEAF
+    zh: 日产聆风
+    pt: Nissan LEAF
+    fr: Nissan LEAF
+    de: Nissan LEAF
+    it: Nissan LEAF
+    jp: 日産リーフ
+  gt_academy:
+    en: GT Academy
+    es: Academia GT
+    ru: Академия GT
+    zh: GT 学院
+    pt: GT Academy
+    fr: GT Academy
+    de: GT Academy
+    it: GT Academy
+    jp: GTアカデミー
+  world_without_petrol:
+    en: World Without Petrol
+    es: Un mundo sin petróleo
+    ru: Мир без бензина
+    zh: 无需汽油的世界
+    pt: Mundo Sem combustível
+    fr: Un monde sans essence
+    de: Eine Welt ohne Benzin
+    it: Un mondo senza petrolio
+    jp: ガソリンのない世界
+  director_of_excitement:
+    en: Director of Excitement
+    es: Director de Emoción
+    ru: Директор азарта
+    zh: 热血主宰者
+    pt: Responsável pelo Entusiasmo
+    fr: Directeur de l'émotion
+    de: Direktor für Fahrspaß
+    it: Maestro delle emozioni
+    jp: 興奮のディレクター
+  taxi_of_tomorrow:
+    en: Taxi of Tomorrow
+    es: El Taxi del Mañana
+    ru: Такси будущего
+    zh: 未来的的士
+    pt: Táxi de amanhã
+    fr: Le taxi de demain
+    de: Das Taxi der Zukunft
+    it: Il taxi di domani
+    jp: 明日のタクシー
+  deltawing:
+    en: DeltaWing
+    es: DeltaWing
+    ru: DeltaWing
+    zh: DeltaWing（三角翼）
+    pt: DeltaWing
+    fr: DeltaWing
+    de: DeltaWing
+    it: DeltaWing
+    jp: デルタウイング
+  leaf_nismo_rc:
+    en: Leaf NISMO RC
+    es: Leaf NISMO RC
+    ru: Leaf NISMO RC
+    zh: 聆风 NISMO RC
+    pt: Leaf NISMO RC
+    fr: Leaf NISMO RC
+    de: Leaf NISMO RC
+    it: Leaf NISMO RC
+    jp: リーフNISMO RC
+  project_370z:
+    en: Project 370z
+    es: Proyecto 370z
+    ru: Project 370z
+    zh: Project 370z
+    pt: Projecto 370z
+    fr: Project 370z
+    de: Das Projekt 370z
+    it: Progetto 370z
+    jp: プロジェクト370z
+  juke_box:
+    en: Juke Box
+    es: Juke Box
+    ru: Джук-бокс
+    zh: Juke Box
+    pt: Juke Box
+    fr: Juke Box
+    de: Juke Box
+    it: Juke Box
+    jp: ジュークボックス
+  juke_r:
+    en: Juke-R
+    es: Juke R
+    ru: Juke R
+    zh: Juke R
+    pt: Juke R
+    fr: Juke R
+    de: Juke R
+    it: Juke R
+    jp: ジュークR
+  the_planet_zero:
+    en: The Planet Zero
+    es: El Planeta Cero
+    ru: Планета Ноль
+    zh: Planet Zero
+    pt: O Planet Zero
+    fr: The Planet Zero
+    de: Planet Zero
+    it: Il Pianeta Zero
+    jp: 惑星ゼロ
+   
+    
+copy:
+  nml:
+    nissan:
+      en: Nissan
+      es: Nissan
+      ru: Nissan
+      zh: 日产
+      pt: Nissan
+      fr: Nissan
+      de: Nissan
+      it: Nissan
+      jp: 日産
+    shift:
+      en: Shift
+      es: Cambiar
+      ru: Переключение
+      zh: Shift
+      pt: Mover
+      fr: Shift
+      de: Shift
+      it: Shift
+      jp: シフト
+    what_if:
+      en: What If
+      es: ¿Qué pasaría si
+      ru: А если бы
+      zh: 大胆畅想
+      pt: E que tal se
+      fr: Et si
+      de: Was wäre, wenn
+      it: Cosa succederebbe se
+      jp: もし
+  social:
+    facebook:
+      en: Facebook
+      es: Facebook
+      ru: Facebook
+      zh: Facebook
+      pt: Facebook
+      fr: Facebook
+      de: Facebook
+      it: Facebook
+      jp: Facebook
+    twitter:
+      en: Twitter
+      es: Twitter
+      ru: Twitter
+      zh: Twitter
+      pt: Twitter
+      fr: Twitter
+      de: Twitter
+      it: Twitter
+      jp: Twitter
+    youtube:
+      en: YouTube
+      es: YouTube
+      ru: YouTube
+      zh: YouTube
+      pt: YouTube
+      fr: YouTube
+      de: YouTube
+      it: YouTube
+      jp: YouTube
+  buttons:
+    back:
+      en: Back
+      es: Volver
+      ru: Назад
+      zh: 返回
+      pt: Voltar
+      fr: Retour
+      de: Zurück
+      it: Indietro
+      jp: 戻る
+    go:
+      en: go
+      es: ir
+      ru: переход
+      zh: 前进
+      pt: ir
+      fr: aller
+      de: Los
+      it: vai
+      jp: 進む
+    learn_more:
+      en: Learn More
+      es: Más información
+      ru: Узнать больше
+      zh: 了解更多
+      pt: Saiba mais
+      fr: En savoir plus
+      de: Weitere Infos
+      it: Maggiori informazioni
+      jp: 詳細はこちら
+  general:
+    choose_country:
+      en: Choose a Country
+      es: Elige un país
+      ru: Выбрать страну
+      zh: Choose a Country
+      pt: Seleccione um país
+      fr: Choisissez un pays
+      de: Land auswählen
+      it: Scegli un paese
+      jp: 国を選ぶ
+    languages:
+      en: English
+      es: Español
+      ru: Русский
+      zh: 中文
+      pt: Português
+      fr: Français
+      de: Deutsch
+      it: Italiano
+      jp: 日本語
+    close:
+      en: Close
+      es: Cerrar
+      ru: Закрыть
+      zh: 关闭
+      pt: Fechar
+      fr: Fermer
+      de: Schließen
+      it: Close
+      jp: 終了
+    gallery:
+      en: Gallery
+      es: Galería
+      ru: Галерея
+      zh: 照片集
+      pt: Galeria
+      fr: Galerie
+      de: Galerie
+      it: Galleria
+      jp: ギャラリー
+    gallery_kong:
+      en: The view from the roof
+      es: The view from the roof
+      ru: The view from the roof
+      zh: The view from the roof
+      pt: The view from the roof
+      fr: The view from the roof
+      de: The view from the roof
+      it: The view from the roof
+      jp: The view from the roof
+    global:
+      en: Global
+      es: Global
+      ru: Глобальный
+      zh: 全球
+      pt: Global
+      fr: International
+      de: Weltweit
+      it: Globale
+      jp: グローバル
+    handling_pii:
+      en: Handling of Personally Identifiable Information
+      es: Gestión de información que puede identificar a las personas
+      ru: Обработка персональных данных
+      zh: 个人身份信息处理
+      pt: Tratamento de Informações pessoalmente identificáveis
+      fr: Traitement des informations personnelles
+      de: Umgang mit personenbezogenen Daten
+      it: Gestione delle informazioni personali identificabili
+      jp: 個人情報の取り扱いについて
+    home:
+      en: Home
+      es: Página principal
+      ru: Главная страница
+      zh: 主页
+      pt: Início
+      fr: Accueil
+      de: Startseite
+      it: Home
+      jp: ホーム
+    explore_innovations:
+      en: Explore Innovations
+      es: Explora las innovaciones
+      ru: Освойте инновации
+      zh: 了解创新技术
+      pt: Explorar Inovações
+      fr: Explorer les innovations
+      de: Innovationen erleben
+      it: Scopri le innovazioni
+      jp: 革新を体験
+    privacy_legal:
+      en: Privacy and Legal
+      es: Aviso legal y privacidad
+      ru: Конфиденциальность и юридическая ответственность
+      zh: 隐私权政策和法律条款
+      pt: Privacidade e Aviso Legal
+      fr: Informations juridiques et sur la confidentialité
+      de: Datenschutz und Impressum
+      it: Informazioni legali e sulla privacy
+      jp: プライバシーと法律
+    underscore:
+      en: '_'
+      es: '_'
+      ru: '_'
+      zh: '_'
+      pt: '_'
+      fr: '_'
+      de: '…'
+      it: '_'
+      jp: '_'
+    select_country:
+      en: Select your country below
+      es: Selecciona tu país a continuación
+      ru: Выберите внизу вашу страну
+      zh: 请在下方选择您所在国
+      pt: Seleccione o seu país a seguir
+      fr: Sélectionnez votre pays ci-dessous
+      de: Bitte unten Ihr Land auswählen
+      it: Seleziona il tuo paese qui sotto
+      jp: 下記から国を選んでください
+    select_language:
+      en: Select a Language
+      es: Elije un idioma
+      ru: Выбор языка
+      zh: 选择语言
+      pt: Seleccionar um idioma
+      fr: Sélectionner une langue
+      de: Sprache auswählen
+      it: Seleziona una lingua
+      jp: 言語を選ぶ
+    share:
+      en: SHARE
+      es: COMPARTIR
+      ru: РАССКАЗАТЬ
+      zh: 分享
+      pt: PARTILHAR
+      fr: PARTAGER
+      de: TEILEN
+      it: CONDIVIDI
+      jp: シェア
+    videos:
+      en: Videos
+      es: Videos
+      ru: Видео
+      zh: 视频
+      pt: Vídeos
+      fr: Vidéos
+      de: Videos
+      it: Video
+      jp: 動画
+    videos_kong:
+      en: The birth of an icon
+      es: Videos
+      ru: Видео
+      zh: 视频
+      pt: Vídeos
+      fr: Vidéos
+      de: Videos
+      it: Video
+      jp: 動画
+    remote_activation:
+      en: Remote Activation
+      es: ACTIVACIÓN REMOTA
+      ru: ДИСТАНЦИОННАЯ АКТИВАЦИЯ
+      zh: 远程激活
+      pt: ACTIVAÇÃO REMOTA
+      fr: ACTIVATION À DISTANCE
+      de: FERNAKTIVIERUNG
+      it: ACCENSIONE REMOTA
+      jp: リモート作動
+    battery_life:
+      en: Battery Life
+      es: LA BATERÍA DURA
+      ru: ПРОДЛЕВАЕТСЯ СРОК РАБОТЫ АККУМУЛЯТОРА
+      zh: 电池寿命
+      pt: DURAÇÃO DA BATERIA
+      fr: DURÉE DE VIE DE LA BATTERIE
+      de: BATTERIEBETRIEBSZEIT
+      it: DURATA DELLA BATTERIA
+      jp: バッテリーの寿命
+    climate_display:
+      en: Climate Display
+      es: VISUALIZACIÓN DE LA CLIMATIZACIÓN
+      ru: ОТОБРАЖЕНИЕ КЛИМАТА
+      zh: 温度显示
+      pt: ECRÃ DO CLIMATIZADOR
+      fr: AFFICHAGE DU SYSTÈME DE CLIMATISATION
+      de: KLIMAANZEIGE
+      it: SCOPRI LA TEMPERATURA
+      jp: 気温表示
+    carwings:
+      en: Carwings Technology
+      es: TECNOLOGÍA CARWINGS
+      ru: ТЕХНОЛОГИЯ CARWINGS
+      zh: CARWINGS 智行技术
+      pt: TECNOLOGIA CARWINGS
+      fr: TECHNOLOGIE CARWINGS
+      de: CARWINGS-TECHNOLOGIE
+      it: TECNOLOGIA CARWINGS
+      jp: カーウイングステクノロジー
+    four_cameras:
+      en: Four Cameras
+      es: CUATRO CÁMARAS
+      ru: ЧЕТЫРЕ ВИДЕОКАМЕРЫ
+      zh: 四台相机
+      pt: QUATRO CÂMARAS
+      fr: QUATRE CAMÉRAS
+      de: VIER KAMERAS
+      it: QUATTRO TELECAMERE
+      jp: 4つのカメラ
+    birds_eye_view:
+      en: Bird's-eye view
+      es: A VISTA DE PÁJARO
+      ru: ОБЗОР С ВЫСОТЫ ПТИЧЬЕГО ПОЛЕТА
+      zh: 鸟瞰视野
+      pt: VISÃO PANORÂMICA
+      fr: VUE PLONGEANTE
+      de: VOGELPERSPEKTIVE
+      it: VISTA A VOLO D’UCCELLO
+      jp: 空から見下ろす
+    switch_views:
+      en: Switch views
+      es: ALTERNA LAS VISTAS 
+      ru: ПЕРЕКЛЮЧЕНИЕ ВИДОВ 
+      zh: 切换视野 
+      pt: ALTERNAR VISTAS 
+      fr: CHANGER DE VUES 
+      de: ANSICHT WECHSELN 
+      it: CAMBIA PUNTO DI VISTA 
+      jp: 画像切り替え 
+    intelligent_design:
+      en: INNOVATIVE AERODYNAMICS
+      es: AERODINÁMICA INNOVADORA
+      ru: ИННОВАЦИОННАЯ АЭРОДИНАМИКА
+      zh: 创新气体力学
+      pt: AERODINÂMICA INOVADORA
+      fr: AÉRODYNAMISME NOVATEUR
+      de: INNOVATIVE AERODYNAMIK
+      it: AERODINAMICA INNOVATIVA
+      jp: 革新的なエアロダイナミクス
+    unrivaled_supercar:
+      en: UNRIVALED SUPERCAR
+      es: SUPERCOCHE SIN IGUAL
+      ru: НЕПРЕВЗОЙДЕННЫЙ СУПЕРКАР
+      zh: 无可比拟的超级跑车
+      pt: SUPER-CARRO SEM IGUAL
+      fr: UNE VOITURE EXTRAORDINAIRE SANS ÉGAL
+      de: EIN EINZIGARTIGER SUPERSPORTWAGEN
+      it: UNA SUPERCAR SENZA RIVALI
+      jp: 無敵のスーパーカー登場
+    battery_status:
+      en: Battery status
+      es: ESTADO DE LA BATERÍA
+      ru: СОСТОЯНИЕ АККУМУЛЯТОРА
+      zh: 电池状态
+      pt: ESTADO DA BATERIA
+      fr: NIVEAU DE CHARGE DE LA BATTERIE
+      de: BATTERIESTANDSANZEIGE
+      it: LIVELLO DI CARICA
+      jp: バッテリー状況
+    automatic_alerts:
+      en: Automatic alerts
+      es: ALERTAS AUTOMÁTICAS
+      ru: АВТОМАТИЧЕСКИЕ ПРЕДУПРЕЖДЕНИЯ
+      zh: 自动提醒
+      pt: ALERTAS AUTOMÁTICOS
+      fr: ALERTES AUTOMATIQUES
+      de: AUTOMATISCHE BENACHRICHTIGUNG
+      it: AVVISI AUTOMATICI
+      jp: 自動警告機能
+    charging_stations:
+      en: Charging stations
+      es: ESTACIONES DE CARGA
+      ru: ЗАРЯДНЫЕ СТАНЦИИ
+      zh: 充电站
+      pt: PONTOS DE CARREGAMENTO
+      fr: STATIONS DE RECHARGE
+      de: LADESTATIONEN
+      it: STAZIONI DI CARICA
+      jp: 充電ステーション
+    utr:
+      en: THE ULTIMATE TAXI RIDE
+      es: 
+      ru: 
+      zh: 
+      pt: 
+      fr: 
+      de: 
+      it: 
+      jp: 
+  
+  locations:
+    - region:
+        key: americas
+        name:
+          en: Americas
+          es: América
+          ru: Северная и Южная Америка
+          zh: 美洲
+          pt: Américas
+          fr: Amérique
+          de: Nord-, Mittel- und Südamerika
+          it: Americhe
+          jp: 北米／中南米
+      countries:
+        - key: argentina
+          name:
+            en: Argentina
+            es: Argentina
+            ru: Аргентина
+            zh: 阿根廷
+            pt: Argentina
+            fr: Argentine
+            de: Argentinien
+            it: Argentina
+            jp: Aアルゼンチン
+        - key: barbados
+          name:
+            en: Barbados
+            es: Barbados
+            ru: Барбадос
+            zh: 巴巴多斯
+            pt: Barbados
+            fr: Barbade
+            de: Barbados
+            it: Barbados
+            jp: バルバドス
+        - key: bolivia
+          name:
+            en: Bolivia
+            es: Bolivia
+            ru: Боливия
+            zh: 玻利维亚
+            pt: Bolívia
+            fr: Bolivie
+            de: Bolivien
+            it: Bolivia
+            jp: ボリビア
+        - key: canada
+          name:
+            en: Canada
+            es: Canadá
+            ru: Канада
+            zh: 加拿大
+            pt: Canadá
+            fr: Canada
+            de: Kanada
+            it: Canada
+            jp: カナダ
+        - key: chile
+          name:
+            en: Chile
+            es: Chile
+            ru: Чили
+            zh: 智利
+            pt: Chile
+            fr: Chili
+            de: Chile
+            it: Cile
+            jp: チリ
+        - key: colombia
+          name:
+            en: Colombia
+            es: Colombia
+            ru: Колумбия
+            zh: 哥伦比亚
+            pt: Colômbia
+            fr: Colombie
+            de: Kolumbien
+            it: Colombia
+            jp: コロンビア
+        - key: costa_rica
+          name:
+            en: Costa Rica
+            es: Costa Rica
+            ru: Коста-Рика
+            zh: 哥斯达黎加
+            pt: Costa Rica
+            fr: Costa Rica
+            de: Costa Rica
+            it: Costa Rica
+            jp: コスタリカ
+        - key: dominican_republic
+          name:
+            en: Dominican Republic
+            es: República Dominicana
+            ru: Доминиканская Республика
+            zh: 多米尼加共和国
+            pt: República Dominicana
+            fr: République dominicaine
+            de: Dominikanische Republik
+            it: Repubblica Dominicana
+            jp: ドミニカ共和国
+        - key: el_salvador
+          name:
+            en: El Salvador
+            es: El Salvador
+            ru: Сальвадор
+            zh: 萨尔瓦多
+            pt: El Salvador
+            fr: Salvador
+            de: El Salvador
+            it: El Salvador
+            jp: エルサルバドル
+        - key: guatemala
+          name:
+            en: Guatemala
+            es: Guatemala
+            ru: Гватемала
+            zh: 危地马拉
+            pt: Guatemala
+            fr: Guatemala
+            de: Guatemala
+            it: Guatemala
+            jp: グアテマラ
+        - key: guadeloupe
+          name:
+            en: Guadeloupe
+            es: Guadalupe
+            ru: Гваделупа
+            zh: 瓜德罗普岛
+            pt: Guadalupe
+            fr: Guadeloupe
+            de: Guadeloupe
+            it: Guadalupe
+            jp: グアドループ
+        - key: guyana
+          name:
+            en: Guyana
+            es: Guyana
+            ru: Гайана
+            zh: 圭亚那
+            pt: Guiana
+            fr: Guyane
+            de: Guyana
+            it: Guyana
+            jp: ギアナ
+        - key: jamaica
+          name:
+            en: Jamaica
+            es: Jamaica
+            ru: Ямайка
+            zh: 牙买加
+            pt: Jamaica
+            fr: Jamaïque
+            de: Jamaika
+            it: Giamaica
+            jp: ジャマイカ
+        - key: mexico
+          name:
+            en: Mexico
+            es: Mexico
+            ru: Мексика
+            zh: 墨西哥
+            pt: México
+            fr: Mexique
+            de: Mexiko
+            it: Messico
+            jp: メキシコ
+        - key: panama
+          name:
+            en: Panama
+            es: Panamá
+            ru: Панама
+            zh: 巴拿马
+            pt: Panamá
+            fr: Panama
+            de: Panama
+            it: Panama
+            jp: パナマ
+        - key: paraguay
+          name:
+            en: Paraguay
+            es: Paraguay
+            ru: Парагвай
+            zh: 巴拉圭
+            pt: Paraguai
+            fr: Paraguay
+            de: Paraguay
+            it: Paraguay
+            jp: パラグアイ
+        - key: puerto_rico
+          name:
+            en: Puerto Rico
+            es: Puerto Rico
+            ru: Пуэрто-Рико
+            zh: 波多黎各
+            pt: Porto Rico
+            fr: Porto Rico
+            de: Puerto Rico
+            it: Portorico
+            jp: プエルトリコ
+        - key: trinidad_tobago
+          name:
+            en: Trinidad & Tobago
+            es: Trinidad y Tobago
+            ru: Тринидад и Тобаго
+            zh: 特立尼达和多巴哥
+            pt: Trindade e Tobago
+            fr: Trinité-et-Tobago
+            de: Trinidad und Tobago
+            it: Trinidad e Tobago
+            jp: トリニダード・トバゴ
+        - key: united_states
+          name:
+            en: United States
+            es: Estados Unidos
+            ru: Соединенные Штаты Америки
+            zh: 美国
+            pt: Estados Unidos
+            fr: États-Unis
+            de: Vereinigte Staaten von Amerika
+            it: Stati Uniti
+            jp: 米国
+    - region:
+        key: europe
+        name:
+          en: Europe
+          es: Europe
+          ru: Европа
+          zh: 欧洲
+          pt: Europa
+          fr: Europe
+          de: Europa
+          it: Europa
+          jp: ヨーロッパ
+      countries:
+        - key: austria
+          name:
+            en: Autriche
+            es: Austria
+            ru: Австрия
+            zh: 奥地利
+            pt: Áustria
+            fr: Austria
+            de: Österreich
+            it: Austria
+            jp: オーストリア
+        - key: azerbaijan
+          name:
+            en: Azerbaijan
+            es: Azerbaiyán
+            ru: Азербайджан
+            zh: 阿塞拜疆
+            pt: Azerbaijão
+            fr: Azerbaïdjan
+            de: Aserbaidschan
+            it: Azerbaigian
+            jp: アゼルバイジャン
+        - key: belgium_french
+          name:
+            en: Belgium (French)
+            es: Bélgica (francés)
+            ru: Бельгия (французский)
+            zh: 比利时（法语区）
+            pt: Bélgica (francês)
+            fr: Belgique (français)
+            de: Belgien (Französisch)
+            it: Belgio (francese)
+            jp: ベルギー（フランス語）
+        - key: belgium_dutch
+          name:
+            en: Belgium (Dutch)
+            es: Bélgica (holandés)
+            ru: Бельгия (голландский)
+            zh: 比利时（荷兰语区）
+            pt: Bélgica (neerlandês)
+            fr: Belgique (néerlandais)
+            de: Belgien (Niederländisch)
+            it: Belgio (olandese)
+            jp: ベルギー（オランダ語）
+        - key: bulgaria
+          name:
+            en: Bulgaria
+            es: Bulgaria
+            ru: Болгария
+            zh: 保加利亚
+            pt: Bulgária
+            fr: Bulgarie
+            de: Bulgarien
+            it: Bulgaria
+            jp: ブルガリア
+        - key: croatia
+          name:
+            en: Croatia
+            es: Croacia
+            ru: Хорватия
+            zh: 克罗地亚
+            pt: Croácia
+            fr: Croatie
+            de: Kroatien
+            it: Croazia
+            jp: クロアチア
+        - key: cyprus
+          name:
+            en: Cyprus
+            es: Chipre
+            ru: Кипр
+            zh: 塞浦路斯
+            pt: Chipre
+            fr: Chypre
+            de: Zypern
+            it: Cipro
+            jp: キプロス
+        - key: czech_republic
+          name:
+            en: Czech Republic
+            es: República Checa
+            ru: Чешская Республика
+            zh: 捷克共和国
+            pt: República Checa
+            fr: République tchèque
+            de: Tschechische Republik
+            it: Repubblica Ceca
+            jp: チェコ共和国
+        - key: denmark
+          name:
+            en: Denmark
+            es: Dinamarca
+            ru: Дания
+            zh: 丹麦
+            pt: Dinamarca
+            fr: Danemark
+            de: Dänemark
+            it: Danimarca
+            jp: デンマーク
+        - key: estonia
+          name:
+            en: Estonia
+            es: Estonia
+            ru: Эстония
+            zh: 爱沙尼亚
+            pt: Estónia
+            fr: Estonie
+            de: Estland
+            it: Estonia
+            jp: エストニア
+        - key: finland
+          name:
+            en: Finland
+            es: Finlandia
+            ru: Финляндия
+            zh: 芬兰
+            pt: Finlândia
+            fr: Finlande
+            de: Finnland
+            it: Finlandia
+            jp: フィンランド
+        - key: france
+          name:
+            en: France
+            es: Francia
+            ru: Франция
+            zh: 法国
+            pt: França
+            fr: France
+            de: Frankreich
+            it: Francia
+            jp: フランス
+        - key: germany
+          name:
+            en: Germany
+            es: Alemania
+            ru: Германия
+            zh: 德国
+            pt: Alemanha
+            fr: Allemagne
+            de: Deutschland
+            it: Germania
+            jp: ドイツ
+        - key: greece
+          name:
+            en: Greece
+            es: Grecia
+            ru: Греция
+            zh: 希腊
+            pt: Grécia
+            fr: Grèce
+            de: Griechenland
+            it: Grecia
+            jp: ギリシャ
+        - key: hungary
+          name:
+            en: Hungary
+            es: Hungría
+            ru: Венгрия
+            zh: 匈牙利
+            pt: Hungria
+            fr: Hongrie
+            de: Ungarn
+            it: Ungheria
+            jp: ハンガリー
+        - key: iceland
+          name:
+            en: Iceland
+            es: Islandia
+            ru: Исландия
+            zh: 冰岛
+            pt: Islândia
+            fr: Islande
+            de: Island
+            it: Islanda
+            jp: アイスランド
+        - key: ireland
+          name:
+            en: Ireland
+            es: Irlanda
+            ru: Ирландия
+            zh: 爱尔兰
+            pt: Irlanda
+            fr: Irlande
+            de: Irland
+            it: Irlanda
+            jp: アイルランド
+        - key: italy
+          name:
+            en: Italy
+            es: Italia
+            ru: Италия
+            zh: 意大利
+            pt: Itália
+            fr: Italie
+            de: Italien
+            it: Italia
+            jp: イタリア
+        - key: kazakhstan
+          name:
+            en: Kazakhstan
+            es: Kazajistán
+            ru: Казахстан
+            zh: 哈萨克斯坦
+            pt: Cazaquistão
+            fr: Kazakhstan
+            de: Kasachstan
+            it: Kazakhstan
+            jp: カザフスタン
+        - key: latvia
+          name:
+            en: Latvia
+            es: Letonia
+            ru: Латвия
+            zh: 拉脱维亚
+            pt: Letónia
+            fr: Lettonie
+            de: Lettland
+            it: Lettonia
+            jp: ラトビア
+        - key: lithuania
+          name:
+            en: Lithuania
+            es: Lituania
+            ru: Литва
+            zh: 立陶宛
+            pt: Lituânia
+            fr: Lituanie
+            de: Litauen
+            it: Lituania
+            jp: リトアニア
+        - key: luxembourg
+          name:
+            en: Luxembourg
+            es: Luxemburgo
+            ru: Люксембург
+            zh: 卢森堡
+            pt: Luxemburgo
+            fr: Luxembourg
+            de: Luxemburg
+            it: Lussemburgo
+            jp: ルクセンブルグ
+        - key: malta
+          name:
+            en: Malta
+            es: Malta
+            ru: Мальта
+            zh: 马耳他
+            pt: Malta
+            fr: Malte
+            de: Malta
+            it: Malta
+            jp: マルタ
+        - key: martinique
+          name:
+            en: Martinique
+            es: Martinica
+            ru: Мартиника
+            zh: 马提尼克
+            pt: Martinica
+            fr: Martinique
+            de: Martinique
+            it: Martinica
+            jp: マルティニーク
+        - key: netherlands
+          name:
+            en: Netherlands
+            es: Países Bajos
+            ru: Нидерланды
+            zh: 荷兰
+            pt: Países Baixos
+            fr: Pays-Bas
+            de: Niederlande
+            it: Paesi Bassi
+            jp: オランダ
+        - key: norway
+          name:
+            en: Norway
+            es: Noruega
+            ru: Норвегия
+            zh: 挪威
+            pt: Noruega
+            fr: Norvège
+            de: Norwegen
+            it: Norvegia
+            jp: ノルウェー
+        - key: poland
+          name:
+            en: Poland
+            es: Polonia
+            ru: Польша
+            zh: 波兰
+            pt: Polónia
+            fr: Pologne
+            de: Poland
+            it: Polonia
+            jp: ポーランド
+        - key: portugal
+          name:
+            en: Portugal
+            es: Portugal
+            ru: Португалия
+            zh: 葡萄牙
+            pt: Portugal
+            fr: Portugal
+            de: Polen
+            it: Portogallo
+            jp: ポルトガル
+        - key: reunion
+          name:
+            en: Reunion
+            es: Reunión
+            ru: Реюньон
+            zh: 留尼汪岛
+            pt: Reunião
+            fr: Réunion
+            de: Réunion
+            it: Réunion
+            jp: レユニオン
+        - key: romania
+          name:
+            en: Romania
+            es: Reunión
+            ru: Румыния
+            zh: 罗马尼亚
+            pt: Roménia
+            fr: Roumanie
+            de: Rumänien
+            it: Romania
+            jp: ルーマニア
+        - key: russia
+          name:
+            en: Russia
+            es: Rusia
+            ru: Россия
+            zh: 俄罗斯
+            pt: Rússia
+            fr: Russie
+            de: Russland
+            it: Russia
+            jp: ロシア
+        - key: slovakia
+          name:
+            en: Slovakia
+            es: Eslovaquia
+            ru: Словакия
+            zh: 斯洛伐克
+            pt: Eslováquia
+            fr: Slovaquie
+            de: Slowakei
+            it: Slovacchia
+            jp: スロバキア
+        - key: slovenia
+          name:
+            en: Slovenia
+            es: Eslovenia
+            ru: Словения
+            zh: 斯洛文尼亚
+            pt: Eslovénia
+            fr: Slovénie
+            de: Slowenien
+            it: Slovenia
+            jp: スロバニア
+        - key: spain
+          name:
+            en: Spain
+            es: España
+            ru: Испания
+            zh: 西班牙
+            pt: Espanha
+            fr: Espagne
+            de: Spanien
+            it: Spagna
+            jp: スペイン
+        - key: sweden
+          name:
+            en: Sweden
+            es: Suecia
+            ru: Швеция
+            zh: 瑞典
+            pt: Suécia
+            fr: Sweden
+            de: Schweden
+            it: Svezia
+            jp: スウェーデン
+        - key: switzerland_french
+          name:
+            en: Switzerland (French)
+            es: Suiza (francés)
+            ru: Швейцария (французский)
+            zh: 瑞士（法语区）
+            pt: Suíça (francês)
+            fr: Suisse (français)
+            de: Schweiz (Französisch)
+            it: Svizzera (francese)
+            jp: スイス（フランス語）
+        - key: switzerland_german
+          name:
+            en: Switzerland (German)
+            es: Suiza (alemán)
+            ru: Швейцария (немецкий)
+            zh: 瑞士（德语区）
+            pt: Suíça (alemão)
+            fr: Suisse (allemand)
+            de: Schweiz (Deutsch)
+            it: Svizzera (tedesca)
+            jp: スイス（ドイツ語）
+        - key: turkey
+          name:
+            en: Turkey
+            es: Turquía
+            ru: Турция
+            zh: 土耳其
+            pt: Turquia
+            fr: Turquie
+            de: Türkei
+            it: Turchia
+            jp: トルコ
+        - key: ukraine
+          name:
+            en: Ukraine
+            es: Ucrania
+            ru: Украина
+            zh: 乌克兰
+            pt: Ucrânia
+            fr: Ukraine
+            de: Ukraine
+            it: Ucraina
+            jp: ウクライナ
+        - key: united_kingdom
+          name:
+            en: United Kingdom
+            es: Reino Unido
+            ru: Великобритания
+            zh: 英国
+            pt: Reino Unido
+            fr: Royaume-Uni
+            de: Großbritannien
+            it: Regno Unito
+            jp: 英国
+    - region:
+        key: asia_oceania
+        name:
+          en: Asia/Oceania
+          es: Asia/Oceanía
+          ru: Азия/Океания
+          zh: 亚洲/大洋洲
+          pt: Ásia/Oceânia
+          fr: Asie/Océanie
+          de: Asien/Ozeanien
+          it: Asia/Oceania
+          jp: アジア／オセアニア
+      countries:
+        - key: australia
+          name:
+            en: Australia
+            es: Australia
+            ru: Австралия
+            zh: 澳大利亚
+            pt: Austrália
+            fr: Australie
+            de: Australien
+            it: Australia
+            jp: オーストラリア
+        - key: brunei
+          name:
+            en: Brunei
+            es: Brunéi
+            ru: Бруней
+            zh: 文莱
+            pt: Brunei
+            fr: Brunei
+            de: Brunei
+            it: Brunei
+            jp: ブルネイ
+        - key: china
+          name:
+            en: China
+            es: China
+            ru: Китай
+            zh: 中国
+            pt: China
+            fr: Chine
+            de: China
+            it: Cina
+            jp: 中国
+        - key: hong_kong
+          name:
+            en: Hong Kong
+            es: Hong Kong
+            ru: Гонконг
+            zh: 香港
+            pt: Hong Kong
+            fr: Hong Kong
+            de: Hongkong
+            it: Hong Kong
+            jp: 香港
+        - key: india
+          name:
+            en: India
+            es: India
+            ru: Индия
+            zh: 印度
+            pt: Índia
+            fr: Inde
+            de: Indien
+            it: India
+            jp: インド
+        - key: indonesia
+          name:
+            en: Indonesia
+            es: Indonesia
+            ru: Индонезия
+            zh: 印尼
+            pt: Indonésia
+            fr: Indonésie
+            de: Indonesien
+            it: Indonesia
+            jp: インドネシア
+        - key: japan
+          name:
+            en: Japan
+            es: Japón
+            ru: Япония
+            zh: 日本
+            pt: Japão
+            fr: Japon
+            de: Japan
+            it: Giappone
+            jp: 日本
+        - key: korea
+          name:
+            en: Korea
+            es: Corea
+            ru: Корея
+            zh: 韩国
+            pt: Coreia
+            fr: Corée
+            de: Südkorea
+            it: Corea
+            jp: 韓国
+        - key: malaysia
+          name:
+            en: Malaysia
+            es: Malasia
+            ru: Малайзия
+            zh: 马来西亚
+            pt: Malásia
+            fr: Malaisie
+            de: Malaysia
+            it: Malesia
+            jp: マレーシア
+        - key: new_zealand
+          name:
+            en: New Zealand
+            es: Nueva Zelanda
+            ru: Новая Зеландия
+            zh: 新西兰
+            pt: Nova Zelândia
+            fr: Nouvelle-Zélande
+            de: Neuseeland
+            it: Nuova Zelanda
+            jp: ニュージーランド
+        - key: singapore
+          name:
+            en: Singapore
+            es: Singapur
+            ru: Сингапур
+            zh: 新加坡
+            pt: Singapura
+            fr: Singapour
+            de: Singapur
+            it: Singapore
+            jp: シンガポール
+        - key: taiwan
+          name:
+            en: Taiwan
+            es: Taiwán
+            ru: Тайвань
+            zh: 台湾
+            pt: Taiwan
+            fr: Taïwan
+            de: Taiwan
+            it: Taiwan
+            jp: 台湾
+        - key: vietnam
+          name:
+            en: Vietnam
+            es: Vietnam
+            ru: Вьетнам
+            zh: 越南
+            pt: Vietname
+            fr: Viêt Nam
+            de: Vietnam
+            it: Vietnam
+            jp: ベトナム
+    - region:
+        key: middle_east_africa
+        name:
+          en: Middle East/Africa
+          es: Oriente Medio/África
+          ru: Ближний Восток/Африка
+          zh: 中东/非洲
+          pt: Médio Oriente/África
+          fr: Moyen-Orient/Afrique
+          de: Nahost/Afrika
+          it: Medio Oriente/Africa
+          jp: 中東／アフリカ
+      countries:
+        - key: bahrain
+          name:
+            en: Bahrain
+            es: Bahréin
+            ru: Бахрейн
+            zh: 巴林岛
+            pt: Barém
+            fr: Bahreïn
+            de: Bahrain
+            it: Bahrain
+            jp: バーレーン
+        - key: israel
+          name:
+            en: Israel
+            es: Israel
+            ru: Израиль
+            zh: 以色列
+            pt: Israel
+            fr: Israël
+            de: Israel
+            it: Israele
+            jp: イスラエル
+        - key: jordan_egypt
+          name:
+            en: Jordan (Egypt)
+            es: Jordania (Egipto)
+            ru: Иордан (Египет)
+            zh: 约旦（埃及）
+            pt: Jordânia (Egipto)
+            fr: Jordanie (Égypte)
+            de: Jordanien (Ägypten)
+            it: Giordania (Egitto)
+            jp: ヨルダン（エジプト）
+        - key: kuwait
+          name:
+            en: Kuwait
+            es: Kuwait
+            ru: Кувейт
+            zh: 科威特
+            pt: Kuwait
+            fr: Koweït
+            de: Kuwait
+            it: Kuwait
+            jp: クウェート
+        - key: lebanon
+          name:
+            en: Lebanon
+            es: Líbano
+            ru: Ливан
+            zh: 黎巴嫩
+            pt: Líbano
+            fr: Liban
+            de: Libanon
+            it: Libano
+            jp: レバノン
+        - key: mauritius
+          name:
+            en: Mauritius
+            es: Mauricio
+            ru: Маврикий
+            zh: 毛里求斯
+            pt: Maurícias
+            fr: Maurice
+            de: Mauritius
+            it: Mauritius
+            jp: モーリシャス
+        - key: oman
+          name:
+            en: Oman
+            es: Omán
+            ru: Оман
+            zh: 阿曼
+            pt: Omã
+            fr: Oman
+            de: Oman
+            it: Oman
+            jp: オマーン
+        - key: palestine
+          name:
+            en: Palestine
+            es: Palestina
+            ru: Палестина
+            zh: 巴勒斯坦
+            pt: Palestina
+            fr: Palestine
+            de: Palästina
+            it: Palestina
+            jp: パレスチナ
+        - key: qatar
+          name:
+            en: Qatar
+            es: Catar
+            ru: Катар
+            zh: 卡塔尔
+            pt: Qatar
+            fr: Qatar
+            de: Katar
+            it: Qatar
+            jp: カタール
+        - key: saudi_arabia
+          name:
+            en: Saudi Arabia
+            es: Arabia Saudita
+            ru: Саудовская Аравия
+            zh: 沙特阿拉伯
+            pt: Arábia Saudita
+            fr: Arabie saoudite
+            de: Saudi-Arabien
+            it: Arabia Saudita
+            jp: サウジアラビア
+        - key: south_africa
+          name:
+            en: South Africa
+            es: Sudáfrica
+            ru: Южная Африка
+            zh: 南非
+            pt: África do Sul
+            fr: Afrique du Sud
+            de: Südafrika
+            it: Sud Africa
+            jp: 南アフリカ
+        - key: syria
+          name:
+            en: Syria
+            es: Siria
+            ru: Сирия
+            sh: 叙利亚
+            pt: Síria
+            fr: Syrie
+            de: Syrien
+            it: Siria
+            jp: シリア
+        - key: uae_abu_dhabi
+          name:
+            en: UAE (Abu Dhabi)
+            es: Emiratos Árabes Unidos (Abu Dabi)
+            ru: ОАЭ (Абу-Даби)
+            sh: 阿联酋（阿布扎比）
+            pt: EAU (Abu Dhabi)
+            fr: Émirats arabes unis (Abu Dhabi)
+            de: VAE (Abu Dhabi)
+            it: EAU (Abu Dhabi)
+            jp: アラブ首長国連邦（アブダビ）
+        - key: uae_dubai_emirates
+          name:
+            en: Emiratos Árabes Unidos (Dubái y Emiratos del Norte)
+            es: UAE (Dubai & N. Emirates)
+            ru: ОАЭ (Дубай и Северные Эмираты)
+            sh: 阿联酋（迪拜阿联酋）
+            pt: EAU (Dubai e Emirados Norte)
+            fr: Émirats arabes unis (Dubaï et Émirats du nord)
+            de: VAE (Dubai und nördliche Emirate)
+            it: EAU (Dubai e Emirati del nord)
+            jp: アラブ首長国連邦（ドバイ・北部首長国）
+        - key: uae_middle_east
+          name:
+            en: Emiratos Árabes Unidos (Oriente Medio)
+            es: UAE (Middle East)
+            ru: ОАЭ (Ближний Восток)
+            sh: 阿联酋（中东）
+            pt: VAE (Naher Osten)
+            fr: Émirats arabes unis (Moyen-Orient)
+            de: UAE (Middle East)
+            it: EAU (Medio Oriente)
+            jp: アラブ首長国連邦（中東）

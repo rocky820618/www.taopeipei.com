@@ -1,0 +1,28 @@
+{% assign count = page.battery_status.size %}
+<article class="subsection clearfix">
+	<h2>{{ site.copy.general.battery_status | t: }}</h2>
+	<ul class="grid-wrap{% if count > 1 %} quarter-gutter{% endif %}">
+		{% for item in page.battery_status %}
+			<li class="grid-col{% if count == 1 %} bp1-col-full bp2-col-full{% elsif count == 2 %} bp1-col-one-half bp2-col-one-half{% elsif count == 3 %} bp1-col-one-third bp2-col-one-third{% endif %}  quarterbottom">
+				{% if lang == 'en' %}
+					{% if item.video_title %}<h3 class="h3nowrap">{{ item.video_title | t: }}</h3>{% endif %}
+				{% else %}
+					{% if item.video_title %}<h3>{{ item.video_title | t: }}</h3>{% endif %}
+				{% endif %}
+				{% if item.text %}<p>{{ item.text | t: }}</p>{% endif %}
+				{% if item.video %}
+					<a class="video trackfeature-video video2" id="video{{ forloop.index }}" href="{{ item.href | t: }}" name="{{ item.video_title | t: }}"  title="Video - {{ item.video_title | t: }}">
+					<img src="{{ page.relative_root | t: }}{{ site.image_root }}{{ page.image_dir | t:  }}/{{ item.image | t: }}" alt="{{ item.video_title | t: }}"  />
+					<span class="icon"></span>
+					<div class="highlight"></div>
+					</a>
+				
+				{% endif %}
+				
+				{% if item.single_image %}
+					<img src="{{ page.relative_root | t: }}{{ site.image_root }}{{ page.image_dir | t:  }}/{{ item.single_image | t: }}" alt="{{ item.title | t: }}"  />
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+</article>

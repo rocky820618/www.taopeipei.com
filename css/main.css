@@ -1,0 +1,3071 @@
+html,button,input,select,textarea {color: #333;}
+
+body {font: 1em/1.4em Arial, Helvetica, Helvetica Neue;}
+
+::-moz-selection {background: #F20140;color: #FFF;text-shadow: none;}
+::selection {background: #F20140;color: #FFF;text-shadow: none;}
+hr {display: block;height: 1px;border: 0; border-top: 1px solid #ccc; margin: 1em 0;padding: 0;}
+img {vertical-align: middle;}
+fieldset {border: 0;margin: 0; padding: 0;}
+textarea {resize: vertical;}
+
+body {font: 1em/1.4em Helvetica, Helvetica Neue, Arial;}
+.wrapper {width: 94%;margin: 0 3%;}
+.wrapper-wide {width: 99.7%; margin: 0; border-left: 1px solid #D2D2D2;border-right: 1px solid #D2D2D2;}
+.header-container {background: #FFF;z-index: 10;}
+.footer-container{background: #222;}
+.footer-container .wrapper-wide{background: #222;}
+.bkgwhite {background: #FFF !important;}
+.leftalign{text-align: left !important;}
+.initialload{opacity:0;}
+.initialloadbtn{opacity:0;}
+.socialshare{
+	margin-bottom: 2.5em;
+}
+
+.copy{margin: 0;padding: 0;background: url('../img/copy-container-bkg.gif') repeat-y left top #FFF;}
+
+/* === Main ===================== */
+a{text-decoration: none;color: #999;}
+a:hover, a.active{color: #C71444;}
+p{
+	font: 0.875em/1.25em "NissanAGRegular", Arial, sans-serif;
+}
+p.note{font-size: 70% !important;color: #999;}
+p.featured{font-weight: bold; color: #c61633;}
+
+.notoppadding{padding-top: 0 !important;}
+.lessten{font-size: inherit;}
+
+/* === HUB Styles =============== */
+
+/* === Header =================== */
+
+#logo{position: absolute;height: 130px;width: 105px;z-index: 10;display: block;background: url(../img/hubnav-sprite.png) no-repeat 0 0;text-indent: -9999em;}
+
+.header-container header{
+	position: relative;
+	height: 4.5em !important;
+	background-color: #FFF;
+	border-bottom: none;
+	display: block;
+}
+
+.header-container header .title{
+	position: absolute;
+	font: normal 0.813em/1em 'NissanAGBold';
+	left: 9.0625em;
+	top: 3em;
+	padding-right: 2em;
+	display: block;
+}
+
+.header-container header .menu-trigger{
+	float: right;
+	margin-top: 1.5em;
+	background: url(../img/hubnav-sprite.png) no-repeat -1950px 0;
+	height: 28px;
+	width: 30px;
+}
+
+.header-container header nav{
+	float: right;
+	width: 15%;
+	font-size: 0.625em;
+	padding-top: 3.3em;
+	font-family: 'NissanAGRegular';
+	text-transform: uppercase;
+}
+
+.header-container header nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+	height: 2.5em;
+		
+}
+
+.header-container header nav ul li{
+	float: left;
+}
+
+.header-container header nav ul li a{
+	display: block;
+	line-height: 2.5em;
+	padding: 0 25px 0 0;
+	background: url('../img/global.png') no-repeat right center transparent;
+	margin: 0;
+}
+
+.header-container header nav ul li a span.arrow{
+	font-family: 'NissanAGBold';
+}
+
+/* === Secondary Nav =========== */
+
+ #nav-bar-secondary{
+    background-color: #272727;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    display: block;
+}
+
+.secondarylinks {
+	margin: 0;
+	padding: 0;
+    left: 8.5625em;
+    position: relative;
+    top: 0;
+    
+}
+
+
+ul.links,
+ul.links li{
+	margin: 0 1.5em 0 0;
+	padding: 0;
+}
+
+ul.links li{
+	display: inline-block;
+}
+
+ul.links li a {
+    color: #A8A8A8;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 39px;
+    line-height: 36px;
+    margin: 0 0.75em;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul.links li a:hover,
+ul.links li a.active {
+	color: #FFF;
+}
+
+ul.links li a.active {
+    background: url("../img/menu-chevron.png") no-repeat scroll center bottom transparent;
+    color: #FFFFFF;
+}
+
+/* === Footer ================== */
+.footer-container footer nav{
+	float: left;
+	width: 80%;
+}
+
+.footer-container footer nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: left;	
+}
+
+.footer-container footer nav ul li{
+	padding: 0;
+	float: left;
+	margin: 2em 1em 0 0;
+	/*line-height: 5em;*/
+}
+
+.footer-container footer nav ul li a{
+	color: #999;
+	text-decoration: none;
+	font-size: 0.688em;
+	text-transform: uppercase;
+}
+
+.footer-container footer .sociallinks{
+	float: right;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+}
+
+.sociallinks ul{
+	margin: 1.0935em 0 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+
+.sociallinks ul li{
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+.sociallinks ul li a{
+	width: 2.813em;
+	height: 2.813em;
+	display: block;
+	text-indent: -9999px;
+}
+
+.sociallinks ul li a.facebook{
+	background: url(../img/hubnav-sprite.png) no-repeat -20px -220px;
+}
+
+.sociallinks ul li a:hover.facebook{
+	background: url(../img/hubnav-sprite.png) no-repeat -20px -280px;
+}
+
+.sociallinks ul li a.twitter{
+	background: url(../img/hubnav-sprite.png) no-repeat -80px -220px;
+}
+
+.sociallinks ul li a:hover.twitter{
+	background: url(../img/hubnav-sprite.png) no-repeat -80px -280px;
+}
+
+.sociallinks ul li a.youtube{
+	background: url(../img/hubnav-sprite.png) no-repeat -140px -220px;
+}
+
+.sociallinks ul li a:hover.youtube{
+	background: url(../img/hubnav-sprite.png) no-repeat -140px -280px;
+}
+
+/* === Home Heading ================ */
+
+.dark{
+	color: #000 !important;
+}
+
+.white{
+	color: #FFF !important;
+}
+
+.panels ul{
+	list-style-type: none;
+	padding: 0;
+	
+}
+
+.panels{
+	padding: 0;
+}
+
+.panel img{
+	width:100%;
+	height: auto;
+}
+
+.panel{
+	cursor: pointer;
+	position: relative;
+}
+
+.panelover{
+	cursor: pointer;
+	float: left;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	display: none;
+	overflow: visible;
+}
+
+.panelover-one,
+.panelover-two,
+.panelover-three,
+.paneloverlink{
+	text-transform: uppercase;
+	padding-top: 3.5em;
+	position: absolute;
+	color: #FFF;
+	float: left;
+	width: 80%;
+	left: 0;
+	z-index: 1;
+	font: normal 0.875em/1em 'NissanAGLight';
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.panelover-one .whatif_bold{
+	color: #000;
+	font-family: 'NissanAGBold';
+}
+
+.panelover-two{
+	padding-top: 4.5em;
+	text-align: right;
+}
+
+.panelover-three{
+	color: #000;
+	padding-top: 7.5em;
+	text-align: right;
+	font: normal 0.688em/1em 'NissanAGBold';
+}
+
+.paneloverlink{
+	padding-top: 8em;
+}
+
+
+.panelovertall .panelover-one,
+.panelovertall .panelover-two,
+.panelovertall .panelover-three,
+.panelovertall .panelover-four,
+.panelovertall .paneloverlink{
+	text-transform: uppercase;
+	padding-top: 3.5em;
+	position: absolute;
+	color: #FFF;
+	float: left;
+	width: 86%;
+	left: 0;
+	z-index: 1;
+	font: normal 1.5em/1em 'NissanAGLight';
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.panelovertall .panelover-one .whatif_bold,
+.panelovertall .panelover-two .whatif_bold{
+	color: #000;
+	font-family: 'NissanAGBold';
+}
+
+.panelovertall .panelover-two{
+	padding-top: 4.5em;
+	text-align: right;
+}
+
+.panelovertall .panelover-three{
+	padding-top: 5.5em;
+	text-align: right;
+}
+
+.panelovertall .panelover-four{
+	color: #000;
+	padding-top: 11.5em;
+	text-align: right;
+	font: normal 0.875em/1em 'NissanAGBold';
+}
+
+.panelovertall .paneloverlink{
+	padding-top: 8em;
+}
+
+
+.paneldouble .panelover-one,
+.paneldouble .panelover-two,
+.paneldouble .panelover-three,
+.paneldouble .paneloverlink{
+	text-transform: uppercase;
+	padding-top: 3.5em;
+	position: absolute;
+	color: #FFF;
+	float: left;
+	width: 80%;
+	left: 0;
+	z-index: 1;
+	font: normal 1.55em/1em 'NissanAGLight';
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.paneldouble .paneloverlink{
+	font: normal 1.75em/1em 'NissanAGLight';
+}
+
+.paneldouble .panelover-one .whatif_bold{
+	color: #000;
+	font-family: 'NissanAGBold';
+}
+
+.paneldouble .panelover-two{
+	padding-top: 4.5em;
+	text-align: right;
+}
+
+.paneldouble .panelover-three{
+	color: #000;
+	padding-top: 7.5em;
+	text-align: right;
+	font: normal 1.376em/1em 'NissanAGBold';
+}
+
+.paneldouble .paneloverlink{
+	padding-top: 9em;
+}
+
+
+.trademark{
+	font-family:'NissanAGLight';
+	font-size: 0.80em;
+	position: relative;
+	top: -0.3em;
+	display: none;
+}
+
+.underscore{
+	position: relative;
+	top: -0.2em;
+	margin-right: 4px;
+}
+
+.de .underscore{
+	position: relative;
+	top: 0em;
+}
+
+.copy-container .copy h1{
+	letter-spacing: -0.04em;
+	text-transform: uppercase;
+	font: normal 2.0em/0.5em 'NissanAGLight';
+}
+
+.copy-container .copy h1 span.whatif_bold{
+	letter-spacing: 0;
+	font-family: 'NissanAGBold' !important;
+}
+
+.copy-container .copy p{
+	margin-top: -0.625em;
+	padding-top: 0;
+	font: normal 1em/1.3em 'NissanAGRegular';
+	color: #666666;	
+}
+
+.copy{
+	padding: 1.688em 0;
+}
+
+.strong.em {
+	font-family: "NissanAGBoldItalic";
+}
+
+/* === Page Heading ================ */
+
+.page-heading{
+	padding-top: 3.125em;
+}
+
+.ph-left{
+	float: left;
+	width: 78%;
+}
+
+.ph-right{
+	padding-top: 1.083em;
+	float: right;
+	width: 22%;
+}
+
+.back-bottom{
+	display:  none;
+	margin-top: -1em;
+	float: right;
+	width: 100%;
+}
+
+
+.page-heading h2{
+	padding: 0;
+	margin: 0;
+	padding-top: 2.05em;
+	font: normal 1.188em/1.5em 'NissanAGBold';
+	text-transform: uppercase;
+}
+
+.page-heading h3{
+	padding: 0;
+	margin: 0;
+	font: normal 1.188em/1.0em 'NissanAGRegular';
+	text-transform: uppercase;
+	color: #666;
+}
+
+/* === Page Article ================ */
+article header{
+	padding-bottom: 1em;
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid #D2D2D2;
+}
+
+
+article header h1{
+	margin: 0;
+	font: normal 3.328em/0.8em 'NissanAGBold';
+	text-transform: uppercase;
+	padding: 0.50em 0 0.315em;
+}
+
+article.subsection h1,
+article.subsection .grid-wrap .grid-col h3{
+	font: normal 2.25em/1.15em 'NissanAGBold';
+	text-transform: uppercase;
+	margin: 0 !important;
+	/*padding-top: 0.75em;*/
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.h3nowrap{
+	white-space:nowrap;
+}
+
+article.subsection p{
+	margin-top: 0.5em;
+	padding-right: 2em;
+}
+
+.fullh3{
+	padding-top: 0.75em;	
+}
+
+.eighteenh3{
+	font: normal 1.125em/0.9em 'NissanAGBold' !important;
+	padding-top: 0.75em;
+}
+
+
+article header img {
+	max-width: 100%;
+	height: auto;
+}
+
+.article-left{
+	float: left;
+	width: 70%;
+}
+
+.article-right{
+	float: right;
+	width: 30%;
+}
+
+/* === Explore Elements ========== */
+
+.explore-container{
+	margin-top: 5.125em;
+	min-height: 1622px;
+}
+
+.explore{
+	height: 20em;
+}
+
+.explore h2{
+	font: normal 12px/16px 'NissanAGBold' !important;
+	margin: 0.8em 0 0 !important;
+	letter-spacing: 0em !important;
+	padding: 0 !important;
+}
+
+.explore h3{
+	font: normal 1.625em/1em 'NissanAGBold' !important;
+	margin: 0 !important;
+	word-wrap: break-word;
+}
+
+.explore p{
+	text-transform: uppercase;
+	font: normal 12px/16px 'NissanAGRegular';
+	padding-right: 0.5em;
+	margin-bottom: 0.2em;
+	margin-top: 0 !important;
+}
+
+.explore a{
+	font: normal 0.8125em/1.1em 'NissanAGRegular';
+	padding-left: 0.75em;
+	background: transparent url('../img/hubnav-sprite.png') no-repeat -1439px -485px;
+}
+
+.explore a:hover{
+	background: transparent url('../img/hubnav-sprite.png') no-repeat -1439px -405px;
+}
+
+/* === Page Video ================ */
+
+.videos{	
+	padding-bottom: 0em;
+	margin-bottom: 1.375em;
+	border-bottom: 1px solid #D2D2D2;
+}
+
+.videos ul li img {
+	max-width: 100%;
+	height: auto;
+}
+
+.videos h2{
+	margin: 0;
+	font: normal 1em/1.0em 'NissanAGLight';
+	text-transform: uppercase;
+	padding: 0.35em 0;
+	letter-spacing: 0.25em;
+}
+
+.videos section h3{
+	padding: 0;
+	margin: 0;
+	padding-top: 1.25em;
+	font: normal 1.188em/1em 'NissanAGBold';
+	text-transform: uppercase;
+}
+
+.videos section p{
+	margin-top: 0;
+	padding-top: 0.625em;
+}
+
+
+/* === Page Image Gallery ============ */
+
+.gallery{	
+	padding-bottom: 1em;
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid #D2D2D2;
+}
+
+.gallery .grid-wrap{
+	margin-left: -0.5em;
+}
+
+.gallery ul li{
+	margin-bottom: 0.5em;
+}
+
+.gallery ul li img {
+	max-width: 100%;
+	height: auto;
+}
+
+.gallery h2{
+	margin: 0;
+	font: normal 1em/1.0em 'NissanAGLight';
+	text-transform: uppercase;
+	padding: 0.35em 0;
+	letter-spacing: 0.25em;
+}
+
+
+/* === Page Remote Activation ================ */
+
+.subsection{	
+	padding-bottom: 0em;
+	margin-bottom: 1.375em;
+	border-bottom: 1px solid #D2D2D2;
+}
+
+.subsection ul li img {
+	max-width: 100%;
+	height: auto;
+}
+
+.subsection h2{
+	margin: 0;
+	font: normal 1em/1.0em 'NissanAGLight';
+	text-transform: uppercase;
+	padding: 0.35em 0;
+	letter-spacing: 0.25em;
+}
+
+.subsection section h3{
+	padding: 0;
+	margin: 0;
+	padding-top: 1.25em;
+	font: normal 1.188em/1em 'NissanAGBold';
+	text-transform: uppercase;
+}
+
+.subsection section p{
+	margin-top: 0;
+	padding-top: 0.625em;
+}
+
+
+.quarterbottom{
+	margin-bottom: 0em;
+}
+
+.removetop{
+	margin-top: -0.5em !important;
+}
+
+.removebottom{
+	margin-bottom: -1.5em !important;
+}
+
+.addquarter{
+	margin-bottom: 0.5em;
+}
+
+.smallgutter{
+	margin-top: inherit;
+}
+
+.minussmallgutter{
+	margin-top: inherit;
+}
+
+
+
+/* -- share elements -- */
+
+.share-box{
+	position: relative;
+}
+
+.share-flyout {
+	background: none repeat scroll 0 0 #EBEBEB;
+    border: 1px solid #E2E2E2;
+    bottom: -25px;
+    display: none;
+    height: 40px;
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 220px;
+    margin-bottom: 25px;
+}
+
+.share-flyout-right {
+	background: none repeat scroll 0 0 #EBEBEB;
+    border: 1px solid #E2E2E2;
+    bottom: -25px;
+    display: none;
+    height: 40px;
+    padding-top: 10px;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 220px;
+    margin-bottom: 25px;
+    z-index: 9000;
+}
+
+.share-flyout-right span{
+	z-index: 9001;
+}
+
+.share-flyout .tip {
+    background: url("../img/chevron.png") no-repeat scroll center -3px transparent;
+    bottom: -7px;
+    height: 7px;
+    position: absolute;
+    right: 15px;
+    width: 11px;
+}
+
+.share-flyout-right .tip {
+    background: url("../img/chevron.png") no-repeat scroll center -3px transparent;
+    bottom: -7px;
+    height: 7px;
+    position: absolute;
+    left: 33px;
+    width: 11px;
+}
+
+/* -- controller -- */
+
+.feature{
+	position: relative;
+}
+
+.controller{
+	display: block;
+	z-index:20;
+	position: fixed;
+	right:  0;
+	top: 50%;
+	margin-top: -57px;
+}
+
+.borderbottom{
+	border-bottom: 1px solid #D2D2D2 !important;
+}
+
+/* ie6 warning */
+#modal-exception{
+	width: 640px;
+}
+
+p.warn, p.warnupper{
+	font-size: 0.875em !important;
+}
+
+p.warnupper{
+	text-transform: uppercase;
+}
+
+div.logos{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+span.warnred{
+	color: #c71444;
+}
+
+.logo{
+	float: left;
+	display: block;
+	padding-top: 113px;
+	width: 115px;
+	text-align: center;
+	font-size: 0.875em;
+	color: #222;
+	text-align: center !important;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.firefox{
+	background: #FFF url('../img/icon-firefox.gif') no-repeat center top;
+}
+
+.chrome{
+	background: #FFF url('../img/icon-chrome.gif') no-repeat center top;
+}
+
+.safari{
+	background: #FFF url('../img/icon-safari.gif') no-repeat center top;
+}
+
+.ie{
+	background: #FFF url('../img/icon-ie.gif') no-repeat center top;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 320px) {
+
+	#logo{position: absolute;height: 72px;width: 58px;z-index: 10;display: block;background: url(../img/hubnav-sprite.png) no-repeat -2442px 0;text-indent: -9999em;}
+
+	
+	.smallgutter{
+		margin-top: 8px;
+	}
+	
+	.minussmallgutter{
+		margin-top: -8px;
+	}
+
+	article header h1{
+		font: normal 2.05em/0.9em 'NissanAGBold';
+	}
+	
+	article.subsection h1,
+	article.subsection .grid-wrap .grid-col h3{
+		font: normal 1.5em/0.9em 'NissanAGBold';
+		text-transform: uppercase;
+		margin: 0 !important;
+	}
+	
+	.page-heading {
+	    padding-top: 0em;
+	}
+
+	.header-container{ 
+		position: relative;
+		height: 4.5em;
+		width: 100%;
+		border-bottom: 1px solid #D2D2D2;
+	}
+
+	.header-container header{
+		position: relative;
+		height: 4.5em;
+		background-color: #FFF;
+		border-bottom: none;
+	}
+
+	.header-container header .title{
+		position: absolute;
+		font: normal 0.813em/1em 'NissanAGBold';
+		left: 9.0625em;
+		top: 3em;
+		display: none;
+	}
+	
+	
+	.header-container header .title a{
+		display: inline block;
+		text-align: left;
+		color: #222;
+		text-transform: uppercase;
+		border-right: 1px solid #666666;
+		padding: 0 2em;
+	}
+	
+	.header-container header .title a:last-child{
+		border-right: none;
+	}
+	
+	.header-container header .title a:hover{
+		color: #c71444;	
+	}
+	
+	.header-container header .menu-trigger{
+		display: block;
+	}
+	
+	.header-container header nav{
+		display: none;
+	}
+	
+	 #nav-bar-secondary{
+	 	display: none;
+	 }
+	
+	.subsection section img,
+	.videos section img,
+	.gallery section img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	
+	.footer-container footer {color: #999999;height: 8.4em;}
+		
+	.footer-container footer nav{
+		float: left;
+		width: 90%;
+	}
+	
+	.footer-container footer nav ul{
+		list-style-type: none;
+		padding: 0;
+		float: left;
+		margin: 2.0em 0 0;
+	}
+	
+	.footer-container footer nav ul li{
+		padding: 0;
+		float: left;
+		margin: 0 0.75em 0 0;
+		line-height: 1em;
+	}
+	
+	.footer-container footer nav ul li:last-child{
+		margin-right: 0;
+	}
+	
+	.footer-container footer nav ul li a{
+		color: #999;
+		text-decoration: none;
+		font-size: 0.625em;
+		line-height: 0.61em;
+		text-transform: uppercase;
+	}
+	
+	.footer-container footer nav ul li a:hover{
+		color: #FFF;
+	}
+	
+	
+	.footer-container footer .sociallinks{
+		float: right;
+		width: 10%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.sociallinks ul{
+		margin: 1.563em 0 0;
+		padding: 0;
+		list-style-type: none;
+		float: right;
+	}
+	
+	.sociallinks ul li{
+		float: left;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.sociallinks ul li a{
+		width: 1.875em;
+		height: 1.875em;
+		display: block;
+		text-indent: -9999px;
+	}
+	
+	.sociallinks ul li a.facebook{
+		background: url(../img/hubnav-sprite.png) no-repeat -220px -220px;
+	}
+	
+	.sociallinks ul li a:hover.facebook{
+		background: url(../img/hubnav-sprite.png) no-repeat -220px -280px;
+	}
+	
+	.sociallinks ul li a.twitter{
+		background: url(../img/hubnav-sprite.png) no-repeat -280px -220px;
+	}
+	
+	.sociallinks ul li a:hover.twitter{
+		background: url(../img/hubnav-sprite.png) no-repeat -280px -280px;
+	}
+	
+	.sociallinks ul li a.youtube{
+		background: url(../img/hubnav-sprite.png) no-repeat -340px -220px;
+	}
+	
+	.sociallinks ul li a:hover.youtube{
+		background: url(../img/hubnav-sprite.png) no-repeat -340px -280px;
+	}
+	
+	
+	
+	.copy-container .copy h1{
+		letter-spacing: 0em;
+		text-transform: uppercase;
+		font: normal 1.25em/1em 'NissanAGLight';
+	}
+	
+	.copy-container .copy h1 span.whatif_bold{
+		letter-spacing: 0;
+		font-family: 'NissanAGBold' !important;
+	}
+	
+	.copy-container .copy p{
+		font: normal 1em/1.3em 'NissanAGRegular';
+		color: #666666;	
+	}
+	
+	
+	.videos ul li img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	.gallery ul li img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.quarterbottom{
+		margin-bottom: 0.5em;
+	}
+	
+	/* -- feature panels --- */
+	.panelover-one,
+	.panelover-two,
+	.panelover-three,
+	.paneloverlink{
+		text-transform: uppercase;
+		padding-top: 2.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 80%;
+		left: 0;
+		z-index: 1;
+		font: normal 1.15em/1em 'NissanAGLight';
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	
+	.lessten{
+		font-size: 112%;
+	}
+	
+	.panelover-one .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.panelover-two{
+		padding-top: 3.5em;
+		text-align: right;
+	}
+	
+	.panelover-three{
+		color: #000;
+		padding-top: 5.5em;
+		text-align: right;
+		font: normal 0.98em/1em 'NissanAGBold';
+	}
+	
+	.paneloverlink{
+		padding-top: 6.5em;
+	}
+	
+	
+	.panelovertall .panelover-one,
+	.panelovertall .panelover-two,
+	.panelovertall .panelover-three,
+	.panelovertall .panelover-four,
+	.panelovertall .paneloverlink{
+		text-transform: uppercase;
+		padding-top: 5.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 86%;
+		left: 0;
+		z-index: 1;
+		font: normal 1.4em/1em 'NissanAGLight';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.panelovertall .panelover-one .whatif_bold,
+	.panelovertall .panelover-two .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.panelovertall .panelover-two{
+		padding-top: 6.5em;
+		text-align: right;
+	}
+	
+	.panelovertall .panelover-three{
+		padding-top: 7.5em;
+		text-align: right;
+	}
+	
+	.panelovertall .panelover-four{
+		color: #000;
+		padding-top: 12.25em;
+		text-align: right;
+		font: normal 0.98em/1em 'NissanAGBold';
+	}
+	
+	.panelovertall .paneloverlink{
+		padding-top: 10.5em;
+	}
+	
+	
+	.paneldouble .panelover-one,
+	.paneldouble .panelover-two,
+	.paneldouble .panelover-three,
+	.paneldouble .paneloverlink{
+		text-transform: uppercase;
+		padding-top: 2.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 80%;
+		left: 0;
+		z-index: 1;
+		font: normal 1.15em/1em 'NissanAGLight';
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	
+	.paneldouble .panelover-one .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.paneldouble .panelover-two{
+		padding-top: 3.5em;
+		text-align: right;
+	}
+	
+	.paneldouble .panelover-three{
+		color: #000;
+		padding-top: 5.25em;
+		text-align: right;
+		font: normal 0.98em/1em 'NissanAGBold';
+	}
+	
+	.paneldouble .paneloverlink{
+		padding-top: 6.5em;
+	}
+	
+	/* -- #feature panels -- */
+	
+	.back-bottom{
+		display:  block;
+	}
+	
+	.controller{
+		display: none;
+	}
+	
+	.explore-container{
+		margin-top: 1.5625em;
+		min-height: 1622px;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+
+	
+
+	.smallgutter{
+		margin-top: 16px;
+	}
+	
+	.minussmallgutter{
+		margin-top: 16px;
+	}
+
+	.quarterbottom{
+		margin-bottom: 0em;
+	}
+	
+	
+	
+	/* -- feature panels --- */
+	
+	.panelover-one,
+	.panelover-two,
+	.panelover-three,
+	.paneloverlink{
+		text-transform: uppercase;
+		padding-top: 2.0em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 90%;
+		left: 0;
+		z-index: 1;
+		font: normal 0.513em/1em 'NissanAGLight';
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	
+	.panelover-one .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.panelover-two{
+		padding-top: 3.2em;
+		text-align: right;
+	}
+	
+	.panelover-three{
+		color: #000;
+		padding-top: 5.5em;
+		text-align: right;
+		font: normal 0.458em/1em 'NissanAGBold';
+	}
+	
+	.paneloverlink{
+		padding-top: 6.5em;
+	}
+	
+	
+	.panelovertall .panelover-one,
+	.panelovertall .panelover-two,
+	.panelovertall .panelover-three,
+	.panelovertall .panelover-four,
+	.panelovertall .paneloverlink{
+		text-transform: uppercase;
+		padding-top: 3.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 86%;
+		left: 0;
+		z-index: 1;
+		font: normal 0.75em/1em 'NissanAGLight';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.panelovertall .panelover-one .whatif_bold,
+	.panelovertall .panelover-two .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.panelovertall .panelover-two{
+		padding-top: 4.5em;
+		text-align: right;
+	}
+	
+	.panelovertall .panelover-three{
+		padding-top: 5.5em;
+		text-align: right;
+	}
+	
+	.panelovertall .panelover-four{
+		color: #000;
+		padding-top: 8.7em;
+		text-align: right;
+		font: normal 0.60em/1em 'NissanAGBold';
+	}
+	
+	.panelovertall .paneloverlink{
+		padding-top: 9em;
+	}
+	
+	
+	.paneldouble .panelover-one,
+	.paneldouble .panelover-two,
+	.paneldouble .panelover-three,
+	.paneldouble .paneloverlink{
+		text-transform: uppercase;
+		padding-top: 2.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 90%;
+		left: 0;
+		z-index: 1;
+		font: normal 1.05em/1em 'NissanAGLight';
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	
+	.paneldouble .panelover-one .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.paneldouble .panelover-two{
+		padding-top: 3.5em;
+		text-align: right;
+	}
+	
+	.paneldouble .panelover-three{
+		color: #000;
+		padding-top: 5.25em;
+		text-align: right;
+		font: normal 0.98em/1em 'NissanAGBold';
+	}
+	
+	.paneldouble .paneloverlink{
+		padding-top: 6.5em;
+	}
+	
+	/* -- #feature panels -- */
+	
+	.back-bottom{
+		display:  none;
+	}
+	
+	
+	
+}
+
+@media only screen and (min-width: 600px) {
+
+	
+
+	.es .panelover-one,
+	.es .panelover-two,
+	.es .panelover-three{
+		font: normal 0.65em/1em 'NissanAGLight';
+		
+	}
+	
+	.es .paneldouble .panelover-one,
+	.es .paneldouble .panelover-two,
+	.es .paneldouble .panelover-three{
+		font: normal 1.325em/1em 'NissanAGLight';	
+	}
+	
+	.es .paneldouble .panelover-three{
+		font: normal 1.176em/1em 'NissanAGBold';
+	}
+	
+	.es .panelovertall .panelover-one,
+	.es .panelovertall .panelover-two,
+	.es .panelovertall .panelover-three{
+		font: normal 0.80em/1em 'NissanAGLight';
+	}
+	
+	
+	.pt .panelover-one,
+	.pt .panelover-two,
+	.pt .panelover-three{
+		font: normal 0.65em/1em 'NissanAGLight';
+	}
+	
+	.pt .panelover-three{
+		font: normal 0.65em/1em 'NissanAGBold'
+	}
+	
+	.pt .paneldouble .panelover-one,
+	.pt .paneldouble .panelover-two,
+	.pt .paneldouble .panelover-three{
+		font: normal 1.225em/1em 'NissanAGLight';	
+	}
+	
+	.pt .paneldouble .panelover-three{
+		font: normal 1.176em/1em 'NissanAGBold';
+	}
+	
+	.pt .panelovertall .panelover-one,
+	.pt .panelovertall .panelover-two,
+	.pt .panelovertall .panelover-three{
+		font: normal 0.80em/1em 'NissanAGLight';
+	}
+	
+	.pt .panelovertall .panelover-four{
+		font: normal 0.7em/1em 'NissanAGBold'
+	}
+	
+	
+	.fr .panelover-one,
+	.fr .panelover-two,
+	.fr .panelover-three{
+		font: normal 0.65em/1em 'NissanAGLight';
+		
+	}
+	
+	.fr .paneldouble .panelover-one,
+	.fr .paneldouble .panelover-two,
+	.fr .paneldouble .panelover-three{
+		font: normal 1.2em/1em 'NissanAGLight';	
+	}
+	
+	.fr .paneldouble .panelover-three{
+		font: normal 1.176em/1em 'NissanAGBold';
+	}
+	
+	.fr .panelovertall .panelover-one,
+	.fr .panelovertall .panelover-two,
+	.fr .panelovertall .panelover-three{
+		font: normal 0.70em/1em 'NissanAGLight';
+	}
+	
+	
+	
+	.de .panelover-one,
+	.de .panelover-two,
+	.de .panelover-three{
+		font: normal 0.65em/1em 'NissanAGLight';
+		
+	}
+	
+	.de .panelover-three{
+		font: normal 0.65em/1em 'NissanAGBold';
+	}
+	
+	.de .paneldouble .panelover-one,
+	.de .paneldouble .panelover-two,
+	.de .paneldouble .panelover-three{
+		font: normal 1.2em/1em 'NissanAGLight';	
+	}
+	
+	.de .paneldouble .panelover-three{
+		font: normal 1.176em/1em 'NissanAGBold';
+	}
+	
+	.de .panelovertall .panelover-one,
+	.de .panelovertall .panelover-two,
+	.de .panelovertall .panelover-three{
+		font: normal 0.70em/1em 'NissanAGLight';
+	}
+
+	.de .panelovertall .panelover-four{
+		font: normal 0.70em/1em 'NissanAGBold';
+	}
+	
+	
+	.de .ru-panelover-three{
+		font: normal 0.65em/1em 'NissanAGLight' !important;
+	}
+	
+	.it .panelover-one,
+	.it .panelover-two,
+	.it .panelover-three{
+		font: normal 0.65em/1em 'NissanAGLight';
+		
+	}
+	
+	.it .panelover-three{
+		font: normal 0.65em/1em 'NissanAGBold';
+	}
+	
+	.it .paneldouble .panelover-one,
+	.it .paneldouble .panelover-two,
+	.it .paneldouble .panelover-three{
+		font: normal 1.076em/1em 'NissanAGLight';	
+	}
+	
+	.it .paneldouble .panelover-three{
+		font: normal 1.176em/1em 'NissanAGBold';
+	}
+	
+	.it .panelovertall .panelover-one,
+	.it .panelovertall .panelover-two,
+	.it .panelovertall .panelover-three{
+		font: normal 0.70em/1em 'NissanAGLight';
+	}
+
+	.it .panelovertall .panelover-four{
+		font: normal 0.70em/1em 'NissanAGBold';
+	}
+	
+	
+	.it .ru-panelover-three{
+		font: normal 0.65em/1em 'NissanAGLight' !important;
+	}
+	
+	.it .ru2-panelover-three{
+		font-family: 'NissanAGLight';
+	}
+	
+	.it .ru2-panelover-four{
+		 padding-top: 4.25em;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	#logo{position: absolute;height: 130px;width: 105px;z-index: 10;display: block;background: url(../img/hubnav-sprite.png) no-repeat 0 0;text-indent: -9999em;}
+
+	article header h1{
+		font: normal 3.328em/0.8em 'NissanAGBold';
+	}
+	
+	article.subsection h1,
+	article.subsection .grid-wrap .grid-col h3{
+		font: normal 2.25em/1.15em 'NissanAGBold';
+		text-transform: uppercase;
+		margin: 0 !important;
+	}
+
+	.page-heading {
+	    padding-top: 3.125em;
+	}
+
+	.explore-container{
+		margin-top: 5.125em;
+		min-height: 1622px;
+	}
+
+	.main,.feature{
+		/*padding-top: 4.5em;*/
+	}
+
+	
+	.fancybox-lock .header-container{
+		margin-left: -7.5px;
+	}
+
+	.fancybox-lock .header-container header{
+		/*width: 965px;*/
+	}
+
+	.header-container header .title{
+		position: absolute;
+		font: normal 0.813em/1em 'NissanAGBold';
+		left: 9.0625em;
+		top: 3em;
+		display: block;
+	}
+	
+	.header-container header .menu-trigger{
+		display: none;
+	}
+	
+	.header-container header nav{
+		display: block;
+	}
+	
+	#nav-bar-secondary{
+		display: block;
+	}
+	
+	.footer-container footer {color: #999999;height: 5em;}
+	
+	.footer-container footer nav{
+		float: left;
+		width: 80%;
+	}
+	
+	.footer-container footer nav ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		float: left;
+		
+	}
+	
+	.footer-container footer nav ul li{
+		padding: 0;
+		float: left;
+		margin: 2em 0.8em 0 0;
+		line-height: 1em;
+	}
+	
+	.footer-container footer nav ul li a{
+		color: #999;
+		text-decoration: none;
+		font-size: 0.688em;
+		text-transform: uppercase;
+	}
+	
+	.footer-container footer .sociallinks{
+		float: right;
+		width: 20%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.sociallinks ul{
+		margin: 1.0935em 0 0;
+		padding: 0;
+		list-style-type: none;
+		float: right;
+	}
+	
+	.sociallinks ul li{
+		float: left;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.sociallinks ul li a{
+		width: 2.813em;
+		height: 2.813em;
+		display: block;
+		text-indent: -9999px;
+	}
+	
+	.sociallinks ul li a.facebook{
+		background: url(../img/hubnav-sprite.png) no-repeat -20px -220px;
+	}
+	
+	.sociallinks ul li a:hover.facebook{
+		background: url(../img/hubnav-sprite.png) no-repeat -20px -280px;
+	}
+	
+	.sociallinks ul li a.twitter{
+		background: url(../img/hubnav-sprite.png) no-repeat -80px -220px;
+	}
+	
+	.sociallinks ul li a:hover.twitter{
+		background: url(../img/hubnav-sprite.png) no-repeat -80px -280px;
+	}
+	
+	.sociallinks ul li a.youtube{
+		background: url(../img/hubnav-sprite.png) no-repeat -140px -220px;
+	}
+	
+	.sociallinks ul li a:hover.youtube{
+		background: url(../img/hubnav-sprite.png) no-repeat -140px -280px;
+	}
+	
+	
+		
+	.copy-container .copy h1{
+		letter-spacing: -0.04em;
+		text-transform: uppercase;
+		font: normal 2.0em/1em 'NissanAGRegular';
+	}
+	
+	.fr .copy-container .copy h1,
+	.ru .copy-container .copy h1{
+		font: normal 1.7em/1em 'NissanAGRegular';
+	}
+	
+	.it .copy-container .copy h1,
+	.de .copy-container .copy h1{
+		font: normal 1.5em/1em 'NissanAGRegular';
+	}
+	
+	
+	.copy-container .copy h1 span.whatif_bold{
+		letter-spacing: 0;
+		font-family: 'NissanAGBold' !important;
+	}
+	
+	.copy-container .copy p{
+		font: normal 1em/1.3em 'NissanAGRegular';
+		color: #666666;	
+	}
+	
+	.videos section img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	.gallery img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* -- feature panels --- */
+		
+	.panelover-one,
+	.panelover-two,
+	.panelover-three,
+	.paneloverlink,
+	.es .panelover-one,
+	.es .panelover-two,
+	.es .panelover-three,
+	.es .paneloverlink,
+	.pt .panelover-one,
+	.pt .panelover-two,
+	.pt .panelover-three,
+	.pt .paneloverlink,
+	.fr .panelover-one,
+	.fr .panelover-two,
+	.fr .panelover-three,
+	.fr .paneloverlink
+	{
+		text-transform: uppercase;
+		padding-top: 3.0em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 86%;
+		left: 0;
+		z-index: 1;
+		font: normal 0.813em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	
+	.es .panelover-one,
+	.es .panelover-two,
+	.es .panelover-three{
+		font: normal 0.64em/1em 'NissanAGRegular';	
+	}
+	
+	.pt .panelover-one,
+	.pt .panelover-two,
+	.pt .panelover-three{
+		font: normal 0.64em/1em 'NissanAGRegular';	
+	}
+	
+	.fr .panelover-one,
+	.fr .panelover-two,
+	.fr .panelover-three{
+		font: normal 0.7em/1em 'NissanAGRegular';	
+	}
+	
+	.panelover-one .whatif_bold,
+	.es .panelover-one .whatif_bold,
+	.pt .panelover-one .whatif_bold,
+	.fr .panelover-one .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.panelover-two,
+	.es .panelover-two,
+	.pt .panelover-two,
+	.fr .panelover-two{
+		padding-top: 4.2em;
+		text-align: right;
+	}
+	
+	.panelover-three,
+	.es .panelover-three,
+	.pt .panelover-three,
+	.fr .panelover-three{
+		color: #000;
+		padding-top: 6.25em;
+		text-align: right;
+		font: normal 0.688em/1em 'NissanAGBold';
+	}
+	
+	.es .panelover-three,
+	.pt .panelover-three,
+	.fr .panelover-three{
+		padding-top: 6em;
+	}
+	
+	
+	.paneloverlink,
+	.es .paneloverlink,
+	.pt .paneloverlink,
+	.fr .paneloverlink{
+		padding-top: 6.5em;
+	}
+	
+	.ru .panelover-one,
+	.ru .panelover-two,
+	.ru .panelover-three{
+		font: normal 0.713em/1em 'NissanAGRegular';
+	}
+	
+	.panelovertall .panelover-one,
+	.panelovertall .panelover-two,
+	.panelovertall .panelover-three,
+	.panelovertall .panelover-four,
+	.panelovertall .paneloverlink{
+		text-transform: uppercase;
+		padding-top: 3.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 86%;
+		left: 0;
+		z-index: 1;
+		font: normal 1.05em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.fr .panelovertall .panelover-one,
+	.fr .panelovertall .panelover-two,
+	.fr .panelovertall .panelover-three{
+		width: 86%;
+		font: normal 0.77em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	
+	.ru .panelovertall .panelover-one,
+	.ru .panelovertall .panelover-two,
+	.ru .panelovertall .panelover-three,
+	.ru .panelovertall .panelover-four{
+		font: normal 0.85em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.panelovertall .panelover-one .whatif_bold,
+	.panelovertall .panelover-two .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.panelovertall .panelover-two{
+		padding-top: 4.5em;
+		text-align: right;
+	}
+	
+	.panelovertall .panelover-three{
+		padding-top: 5.5em;
+		text-align: right;
+	}
+	
+	.panelovertall .panelover-four{
+		color: #000;
+		padding-top: 8.0em;
+		text-align: right;
+		font: normal 0.875em/1em 'NissanAGBold';
+	}
+	
+	.panelovertall .paneloverlink{
+		padding-top: 8em;
+	}
+	
+	
+	.paneldouble .panelover-one,
+	.paneldouble .panelover-two,
+	.paneldouble .panelover-three,
+	.paneldouble .paneloverlink{
+		text-transform: uppercase;
+		padding-top: 2.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 86%;
+		left: 0;
+		z-index: 1;
+		font: normal 1.55em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.paneldouble .paneloverlink{
+		font: normal 1.75em/1em 'NissanAGRegular';
+	}
+	
+	
+	
+	.ru .paneldouble .panelover-one,
+	.ru .paneldouble .panelover-two,
+	.ru .paneldouble .panelover-three{
+		font: normal 1.15em/1em 'NissanAGRegular';
+	}
+	
+	
+	.ru-panelover-one,
+	.ru-panelover-two,
+	.ru-panelover-three,
+	.ru-panelover-four,
+	.ru-paneloverlink{
+		text-transform: uppercase;
+		padding-top: 2.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 86%;
+		left: 0;
+		z-index: 1;
+		font: normal 0.875em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.ru2-panelover-one,
+	.ru2-panelover-two,
+	.ru2-panelover-three,
+	.ru2-panelover-four,
+	.ru2-panelover-five,
+	.ru2-paneloverlink{
+		text-transform: uppercase;
+		padding-top: 1.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 86%;
+		left: 0;
+		z-index: 1;
+		font: normal 0.875em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.ru-panelover-two{
+		padding-top: 3.5em;
+		text-align: right;
+	}
+	
+	.ru2-panelover-two{
+		padding-top: 2.5em;
+		text-align: right;
+	}
+	
+	.ru-panelover-three{
+		color: #000;
+		padding-top: 4.5em;
+		text-align: right;
+		color: #FFF;
+		font: normal 0.875em/1em 'NissanAGRegular';
+	}
+	
+	.ru2-panelover-three{
+		color: #000;
+		padding-top: 3.5em;
+		text-align: right;
+		color: #FFF;
+		font: normal 0.713em/1em 'NissanAGRegular';
+	}
+	
+	.de .ru-panelover-three{
+		font: normal 0.65em/1em 'NissanAGRegular' !important;
+	}
+	
+	.fr .ru-panelover-three{
+		padding-top: 5.2em;
+		text-align: right;
+		color: #FFF;
+		font: normal 0.713em/1em 'NissanAGRegular';
+	}
+	
+	.ru-panelover-four{
+		color: #000;
+		padding-top: 6.325em;
+		text-align: right;
+		font: normal 0.688em/1em 'NissanAGBold';
+	}
+	
+	.fr .ru-panelover-four{
+		padding-top: 6.625em;
+	}
+	
+	.ru2-panelover-four{
+		color: #000;
+		padding-top: 4.5em;
+		text-align: right;
+		color: #FFF;
+		font: normal 0.688em/1em 'NissanAGRegular';
+	}
+	
+	.ru2-panelover-five{
+		color: #000;
+		padding-top: 6em;
+		text-align: right;
+		font: normal 0.688em/1em 'NissanAGBold';
+	}
+	
+	.de .ru2-panelover-three{
+		font: normal 0.688em/1em 'NissanAGRegular';
+	}
+	
+	
+	.paneldouble .panelover-one .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.paneldouble .panelover-two{
+		padding-top: 3.5em;
+		text-align: right;
+	}
+	
+	.paneldouble .panelover-three{
+		color: #000;
+		padding-top: 6.25em;
+		text-align: right;
+		font: normal 1.376em/1em 'NissanAGBold';
+	}
+	
+	.paneldouble .paneloverlink{
+		padding-top: 6.5em;
+	}
+	
+	/* -- #feature panels -- */
+	
+	.controller{
+		display: block;
+	}
+	
+	.borderbottom{
+		border-bottom: 1px solid #D2D2D2 !important;
+	}
+	
+}
+
+
+@media only screen and (min-width: 1007px) {
+	.header-container header{
+		border-bottom: 1px solid #D2D2D2;
+		position: relative;
+		background-color: #FFF;
+		height: 4.5em;
+		z-index: 10;
+	}
+
+	.noborder{
+		border: none !important;
+	}
+
+	.wrapper {
+        width: 950px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+    
+    .statements-full {
+    	width: 950px !important; /* 1140px - 10% for margins */
+    	margin: 0 auto;
+    }
+    
+    
+    
+    /* -- feature panels --- */
+    
+    .panelover-one,
+    .panelover-two,
+    .panelover-three,
+    .paneloverlink{
+    	text-transform: uppercase;
+    	padding-top: 3.0em;
+    	position: absolute;
+    	color: #FFF;
+    	float: left;
+    	width: 86%;
+    	left: 0;
+    	z-index: 1;
+    	font: normal 0.875em/1em 'NissanAGRegular';
+    	padding-left: 7%;
+    	padding-right: 7%;
+    }
+    
+    .panelover-one .whatif_bold{
+    	color: #000;
+    	font-family: 'NissanAGBold';
+    }
+    
+    .panelover-two{
+    	padding-top: 4.0em;
+    	text-align: right;
+    }
+    
+    .panelover-three{
+    	color: #000;
+    	padding-top: 7.0em;
+    	text-align: right;
+    	font: normal 0.688em/1em 'NissanAGBold';
+    }
+    
+    .paneloverlink{
+    	padding-top: 7.0em;
+    }
+    
+    .es .panelover-one,
+    .es .panelover-two{
+    	font: normal 0.875em/1em 'NissanAGRegular';	
+    }
+    
+    .es .panelover-three{
+    	padding-top: 8.0em;	
+    }
+    
+    .es .paneloverlink {
+        padding-top: 8.5em;
+    }
+    
+    .panelovertall .panelover-one,
+    .panelovertall .panelover-two,
+    .panelovertall .panelover-three,
+    .panelovertall .panelover-four,
+    .panelovertall .paneloverlink{
+    	text-transform: uppercase;
+    	padding-top: 3.5em;
+    	position: absolute;
+    	color: #FFF;
+    	float: left;
+    	width: 86%;
+    	left: 0;
+    	z-index: 1;
+    	font: normal 1.35em/1em 'NissanAGRegular';
+    	padding-left: 17%;
+    	padding-right: 17%;
+    }
+    
+    .fr .panelovertall .panelover-one,
+    .fr .panelovertall .panelover-two,
+    .fr .panelovertall .panelover-three{
+    	width: 92%;
+    	font: normal 1.05em/1em 'NissanAGRegular';
+    	padding-left: 4%;
+    	padding-right: 4%;
+    }
+    
+    .panelovertall .panelover-one .whatif_bold,
+    .panelovertall .panelover-two .whatif_bold{
+    	color: #000;
+    	font-family: 'NissanAGBold';
+    }
+    
+    .panelovertall .panelover-two{
+    	padding-top: 4.5em;
+    	text-align: right;
+    }
+    
+    .panelovertall .panelover-three{
+    	padding-top: 5.5em;
+    	text-align: right;
+    }
+    
+    .panelovertall .panelover-four{
+    	color: #000;
+    	padding-top: 11.5em;
+    	text-align: right;
+    	font: normal 0.875em/1em 'NissanAGBold';
+    }
+    
+    .panelovertall .paneloverlink{
+    	padding-top: 8em;
+    }
+    
+    
+    .paneldouble .panelover-one,
+    .paneldouble .panelover-two,
+    .paneldouble .panelover-three,
+    .paneldouble .paneloverlink{
+    	text-transform: uppercase;
+    	padding-top: 3.5em;
+    	position: absolute;
+    	color: #FFF;
+    	float: left;
+    	width: 86%;
+    	left: 0;
+    	z-index: 1;
+    	font: normal 1.55em/1em 'NissanAGRegular';
+    	padding-left: 7%;
+    	padding-right: 7%;
+    }
+    
+    .paneldouble .panelover-one .whatif_bold{
+    	color: #000;
+    	font-family: 'NissanAGBold';
+    }
+    
+    .paneldouble .panelover-two{
+    	padding-top: 4.5em;
+    	text-align: right;
+    }
+    
+    .paneldouble .panelover-three{
+    	color: #000;
+    	padding-top: 7.5em;
+    	text-align: right;
+    	font: normal 1.376em/1em 'NissanAGBold';
+    }
+    
+    .paneldouble .paneloverlink{
+    	padding-top: 8em;
+    }
+    
+    /* -- #feature panels -- */
+    /* -- feature panels --- */
+   
+    .panelover-one,
+    .panelover-two,
+    .panelover-three,
+    .paneloverlink{
+    	text-transform: uppercase;
+    	padding-top: 3.0em;
+    	position: absolute;
+    	color: #FFF;
+    	float: left;
+    	width: 86%;
+    	left: 0;
+    	z-index: 1;
+    	font: normal 0.875em/1em 'NissanAGRegular';
+    	padding-left: 7%;
+    	padding-right: 7%;
+    }
+    
+    
+    .panelover-one .whatif_bold{
+    	color: #000;
+    	font-family: 'NissanAGBold';
+    }
+    
+    .panelover-two{
+    	padding-top: 4.0em;
+    	text-align: right;
+    }
+    
+    .panelover-three{
+    	color: #000;
+    	padding-top: 7.0em;
+    	text-align: right;
+    	font: normal 0.688em/1em 'NissanAGBold';
+    }
+    
+    .paneloverlink{
+    	padding-top: 7em;
+    }
+    
+    
+    .ru-panelover-one,
+    .ru-panelover-two,
+    .ru-panelover-three,
+    .ru-panelover-four,
+    .ru-paneloverlink{
+    	text-transform: uppercase;
+    	padding-top: 2.5em;
+    	position: absolute;
+    	color: #FFF;
+    	float: left;
+    	width: 86%;
+    	left: 0;
+    	z-index: 1;
+    	font: normal 0.875em/1em 'NissanAGRegular';
+    	padding-left: 7%;
+    	padding-right: 7%;
+    }
+    
+    .ru2-panelover-one,
+    .ru2-panelover-two,
+    .ru2-panelover-three,
+    .ru2-panelover-four,
+    .ru2-panelover-five,
+    .ru2-paneloverlink{
+    	text-transform: uppercase;
+    	padding-top: 1.5em;
+    	position: absolute;
+    	color: #FFF;
+    	float: left;
+    	width: 86%;
+    	left: 0;
+    	z-index: 1;
+    	font: normal 0.875em/1em 'NissanAGRegular';
+    	padding-left: 7%;
+    	padding-right: 7%;
+    }
+    
+    .ru-panelover-two{
+    	padding-top: 3.5em;
+    	text-align: right;
+    }
+    
+    .ru2-panelover-two{
+    	padding-top: 2.5em;
+    	text-align: right;
+    }
+    
+    .ru-panelover-three{
+    	color: #000;
+    	padding-top: 4.5em;
+    	text-align: right;
+    	color: #FFF;
+    	font: normal 0.875em/1em 'NissanAGRegular';
+    }
+    
+    .ru2-panelover-three{
+    	color: #000;
+    	padding-top: 3.5em;
+    	text-align: right;
+    	color: #FFF;
+    	font: normal 0.875em/1em 'NissanAGRegular';
+    }
+    
+    .ru-panelover-four{
+    	color: #000;
+    	padding-top: 7.325em;
+    	text-align: right;
+    	font: normal 0.688em/1em 'NissanAGBold';
+    }
+    
+    .ru2-panelover-four{
+    	color: #000;
+    	padding-top: 4.65em;
+    	text-align: right;
+    	color: #FFF;
+    	font: normal 0.688em/1em 'NissanAGRegular';
+    }
+    
+    .ru2-panelover-five{
+    	color: #000;
+    	padding-top: 7.325em;
+    	text-align: right;
+    	font: normal 0.688em/1em 'NissanAGBold';
+    }
+    
+    .panelover.gt_r_en .panelover-two {
+    	padding-top: 4.0em;
+    }
+    .gt_r_en .panelover-two + .panelover-two {
+    	padding-top: 5.0em;
+    }
+    .panelover.gt_r_en .panelover-three {
+    	padding-top: 8.0em;
+    }
+    .panelover.gt_r_en .panelover-one {
+    	padding-top: 3.0em;
+    }
+    .panelover.gt_r_en .paneloverlink {
+    	padding-top: 8.0em;
+    }
+    
+    
+    .panelovertall .panelover-one,
+    .panelovertall .panelover-two,
+    .panelovertall .panelover-three,
+    .panelovertall .panelover-four,
+    .panelovertall .paneloverlink{
+    	text-transform: uppercase;
+    	padding-top: 3.5em;
+    	position: absolute;
+    	color: #FFF;
+    	float: left;
+    	width: 86%;
+    	left: 0;
+    	z-index: 1;
+    	font: normal 1.35em/1em 'NissanAGRegular';
+    	padding-left: 7%;
+    	padding-right: 7%;
+    }
+    
+    .fr .panelovertall .panelover-one,
+    .fr .panelovertall .panelover-two,
+    .fr .panelovertall .panelover-three{
+    	width: 92%;
+    	font: normal 1.05em/1em 'NissanAGRegular';
+    	padding-left: 4%;
+    	padding-right: 4%;
+    }
+    
+    .es .panelovertall .panelover-one,
+    .es .panelovertall .panelover-two,
+    .es .panelovertall .panelover-three{
+    	width: 92%;
+    	font: normal 1.05em/1em 'NissanAGRegular';
+    	padding-left: 4%;
+    	padding-right: 4%;
+    }
+    
+    .it .panelovertall .panelover-one,
+    .it .panelovertall .panelover-two,
+    .it .panelovertall .panelover-three{
+    	width: 92%;
+    	font: normal 1.05em/1em 'NissanAGRegular';
+    	padding-left: 4%;
+    	padding-right: 4%;
+    }
+
+	.pt .panelovertall .panelover-one,
+	.pt .panelovertall .panelover-two,
+	.pt .panelovertall .panelover-three{
+		width: 92%;
+		font: normal 1.05em/1em 'NissanAGRegular';
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	
+	.ru .panelovertall .panelover-one,
+	.ru .panelovertall .panelover-two,
+	.ru .panelovertall .panelover-three{
+		width: 92%;
+		font: normal 1.05em/1em 'NissanAGRegular';
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	
+	.de .panelovertall .panelover-one,
+	.de .panelovertall .panelover-two,
+	.de .panelovertall .panelover-three{
+		width: 92%;
+		font: normal 1.05em/1em 'NissanAGRegular';
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	
+    
+    .panelovertall .panelover-one .whatif_bold,
+    .panelovertall .panelover-two .whatif_bold{
+    	color: #000;
+    	font-family: 'NissanAGBold';
+    }
+    
+    .panelovertall .panelover-two{
+    	padding-top: 4.5em;
+    	text-align: right;
+    }
+    
+    .panelovertall .panelover-three{
+    	padding-top: 5.5em;
+    	text-align: right;
+    }
+    
+    .panelovertall .panelover-four{
+    	color: #000;
+    	padding-top: 11.5em;
+    	text-align: right;
+    	font: normal 0.875em/1em 'NissanAGBold';
+    }
+    
+    .panelovertall .paneloverlink{
+    	padding-top: 9em;
+    }
+    
+    
+    .paneldouble .panelover-one,
+    .paneldouble .panelover-two,
+    .paneldouble .panelover-three,
+    .paneldouble .paneloverlink{
+    	text-transform: uppercase;
+    	padding-top: 3.5em;
+    	position: absolute;
+    	color: #FFF;
+    	float: left;
+    	width: 86%;
+    	left: 0;
+    	z-index: 1;
+    	font: normal 1.55em/1em 'NissanAGRegular';
+    	padding-left: 7%;
+    	padding-right: 7%;
+    }
+    
+    .paneldouble .paneloverlink{
+    	font: normal 1.75em/1em 'NissanAGRegular';
+    }
+    
+    .paneldouble .panelover-one .whatif_bold{
+    	color: #000;
+    	font-family: 'NissanAGBold';
+    }
+    
+    .paneldouble .panelover-two{
+    	padding-top: 4.5em;
+    	text-align: right;
+    }
+    
+    .paneldouble .panelover-three{
+    	color: #000;
+    	padding-top: 7.5em;
+    	text-align: right;
+    	font: normal 1.376em/1em 'NissanAGBold';
+    }
+    
+    
+    /* language edits  */
+    
+    .fr .paneldouble .panelover-one,
+    .fr .paneldouble .panelover-two,
+    .fr .paneldouble .panelover-three{
+    	font: normal 1.35em/1em 'NissanAGRegular';	
+    }
+    
+    .fr .paneldouble .panelover-three{
+    	font: normal 1.376em/1em 'NissanAGBold';
+    }
+    
+    .ru .paneldouble .panelover-one,
+    .ru .paneldouble .panelover-two,
+    .ru .paneldouble .panelover-three{
+    	font: normal 1.625em/1em 'NissanAGRegular';
+    	width: 90%;
+    	padding-left: 5%;
+    	padding-right: 5%;
+    }
+    
+    .ru .paneldouble .panelover-three{
+    	font: normal 1.376em/1em 'NissanAGBold';
+    }
+    
+    
+    .es .paneldouble .panelover-one,
+    .es .paneldouble .panelover-two,
+    .es .paneldouble .panelover-three{
+    	font: normal 1.625em/1em 'NissanAGRegular';	
+    }
+    
+    .es .paneldouble .panelover-three{
+    	font: normal 1.376em/1em 'NissanAGBold';
+    }
+    
+    .it .paneldouble .panelover-one,
+    .it .paneldouble .panelover-two,
+    .it .paneldouble .panelover-three{
+    	font: normal 1.376em/1em 'NissanAGRegular';	
+    }
+    
+    .it .paneldouble .panelover-three{
+    	font: normal 1.376em/1em 'NissanAGBold';
+    }
+    
+    .pt .paneldouble .panelover-one,
+    .pt .paneldouble .panelover-two,
+    .pt .paneldouble .panelover-three{
+    	font: normal 1.55em/1em 'NissanAGRegular';	
+    }
+    
+    .pt .paneldouble .panelover-three{
+    	font: normal 1.376em/1em 'NissanAGBold';
+    }
+    
+    .de .paneldouble .panelover-one,
+    .de .paneldouble .panelover-two,
+    .de .paneldouble .panelover-three{
+    	font: normal 1.4em/1em 'NissanAGRegular';	
+    }
+    
+    .de .paneldouble .panelover-three{
+    	font: normal 1.376em/1em 'NissanAGBold';
+    }
+    
+    .paneldouble .paneloverlink{
+    	padding-top: 9em;
+    }
+    
+    /* -- #feature panels -- */
+    
+    
+}
+
+@media only screen and (min-width: 1280px) {
+
+	.wrapper-wide {
+	    width: 1280px; /* no margins */
+	    margin: 0 auto;
+	}
+	
+	.statements-full {
+		width: 950px !important; /* 1140px - 10% for margins */
+		margin: 0 auto;
+	}
+	
+	
+	
+	/* -- feature panels --- */
+	
+	
+	.panelover-one,
+	.panelover-two,
+	.panelover-three,
+	.paneloverlink{
+		text-transform: uppercase;
+		padding-top: 3.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 86%;
+		left: 0;
+		z-index: 1;
+		font: normal 0.875em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.ru-panelover-one,
+	.ru-panelover-two,
+	.ru-panelover-three,
+	.ru-panelover-four,
+	.ru-paneloverlink{
+		text-transform: uppercase;
+		padding-top: 3.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 86%;
+		left: 0;
+		z-index: 1;
+		font: normal 0.875em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.ru2-panelover-one,
+	.ru2-panelover-two,
+	.ru2-panelover-three,
+	.ru2-panelover-four,
+	.ru2-panelover-five,
+	.ru2-paneloverlink{
+		text-transform: uppercase;
+		padding-top: 2.3em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 86%;
+		left: 0;
+		z-index: 1;
+		font: normal 0.875em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.panelover-one .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.panelover-two{
+		padding-top: 4.5em;
+		text-align: right;
+	}
+	
+	.ru-panelover-two{
+		padding-top: 4.5em;
+		text-align: right;
+	}
+	
+	.ru2-panelover-two{
+		padding-top: 3.5em;
+		text-align: right;
+	}
+	
+	.panelover-three{
+		color: #000;
+		padding-top: 7.5em;
+		text-align: right;
+		font: normal 0.688em/1em 'NissanAGBold';
+	}
+	
+	.ru-panelover-three{
+		color: #000;
+		padding-top: 5.5em;
+		text-align: right;
+		color: #FFF;
+		font: normal 0.875em/1em 'NissanAGRegular';
+	}
+	
+	.ru2-panelover-three{
+		color: #000;
+		padding-top: 4.5em;
+		text-align: right;
+		color: #FFF;
+		font: normal 0.875em/1em 'NissanAGRegular';
+	}
+	
+	.ru-panelover-four{
+		color: #000;
+		padding-top: 8.625em;
+		text-align: right;
+		font: normal 0.688em/1em 'NissanAGBold';
+	}
+	
+	.ru2-panelover-four{
+		color: #000;
+		padding-top: 5.61em;
+		text-align: right;
+		color: #FFF;
+		font: normal 0.7em/1em 'NissanAGRegular';
+	}
+	
+	.it .ru2-panelover-three{
+		font-family: 'NissanAGRegular';
+	}
+	
+	.it .ru2-panelover-four{
+		color: #000;
+		padding-top: 5.11em;
+		text-align: right;
+		color: #FFF;
+		font: normal 0.7em/1em 'NissanAGRegular';
+	}
+	
+	.ru2-panelover-five{
+		color: #000;
+		padding-top: 8.625em;
+		text-align: right;
+		font: normal 0.688em/1em 'NissanAGBold';
+	}
+	
+	.paneloverlink{
+		padding-top: 8em;
+	}
+	
+	
+	.panelovertall .panelover-one,
+	.panelovertall .panelover-two,
+	.panelovertall .panelover-three,
+	.panelovertall .panelover-four,
+	.panelovertall .paneloverlink{
+		text-transform: uppercase;
+		padding-top: 3.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 86%;
+		left: 0;
+		z-index: 1;
+		font: normal 1.35em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.fr .panelovertall .panelover-one,
+	.fr .panelovertall .panelover-two,
+	.fr .panelovertall .panelover-three{
+		width: 92%;
+		font: normal 1.05em/1em 'NissanAGRegular';
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	
+	.ru .panelovertall .panelover-one,
+	.ru .panelovertall .panelover-two,
+	.ru .panelovertall .panelover-three{
+		width: 92%;
+		font: normal 1.05em/1em 'NissanAGRegular';
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	
+	.es .panelovertall .panelover-one,
+	.es .panelovertall .panelover-two,
+	.es .panelovertall .panelover-three{
+		width: 86%;
+		font: normal 1.05em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.it .panelovertall .panelover-one,
+	.it .panelovertall .panelover-two,
+	.it .panelovertall .panelover-three{
+		width: 92%;
+		font: normal 1.05em/1em 'NissanAGRegular';
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	
+	.pt .panelovertall .panelover-one,
+	.pt .panelovertall .panelover-two,
+	.pt .panelovertall .panelover-three{
+		width: 86%;
+		font: normal 1.15em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.de .panelovertall .panelover-one,
+	.de .panelovertall .panelover-two,
+	.de .panelovertall .panelover-three{
+		width: 86%;
+		font: normal 1.0em/1em 'NissanAGRegular';
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.panelovertall .panelover-one .whatif_bold,
+	.panelovertall .panelover-two .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.panelovertall .panelover-two{
+		padding-top: 4.5em;
+		text-align: right;
+	}
+	
+	.panelovertall .panelover-three{
+		padding-top: 5.5em;
+		text-align: right;
+	}
+	
+	.panelovertall .panelover-four{
+		color: #000;
+		padding-top: 11.5em;
+		text-align: right;
+		font: normal 0.875em/1em 'NissanAGBold';
+	}
+	
+	.panelovertall .paneloverlink{
+		padding-top: 9em;
+	}
+	
+	
+	.paneldouble .panelover-one,
+	.paneldouble .panelover-two,
+	.paneldouble .panelover-three,
+	.paneldouble .paneloverlink{
+		text-transform: uppercase;
+		padding-top: 3.5em;
+		position: absolute;
+		color: #FFF;
+		float: left;
+		width: 80%;
+		left: 0;
+		z-index: 1;
+		font: normal 1.55em/1em 'NissanAGRegular';
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	
+	.paneldouble .paneloverlink{
+		font: normal 1.75em/1em 'NissanAGRegular';
+	}
+	
+		
+	.paneldouble .panelover-one .whatif_bold{
+		color: #000;
+		font-family: 'NissanAGBold';
+	}
+	
+	.paneldouble .panelover-two{
+		padding-top: 4.5em;
+		text-align: right;
+	}
+	
+	.paneldouble .panelover-three{
+		color: #000;
+		padding-top: 7.5em;
+		text-align: right;
+		font: normal 1.376em/1em 'NissanAGBold';
+	}
+	
+	/* language edits  */
+	
+	.fr .paneldouble .panelover-one,
+	.fr .paneldouble .panelover-two,
+	.fr .paneldouble .panelover-three{
+		font: normal 1.35em/1em 'NissanAGRegular';	
+	}
+	
+	.fr .paneldouble .panelover-three{
+		font: normal 1.376em/1em 'NissanAGBold';
+	}
+	
+	.ru .paneldouble .panelover-one,
+	.ru .paneldouble .panelover-two,
+	.ru .paneldouble .panelover-three{
+		font: normal 1.625em/1em 'NissanAGRegular';
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	
+	.ru .paneldouble .panelover-three{
+		font: normal 1.376em/1em 'NissanAGBold';
+	}
+	
+	
+	.es .paneldouble .panelover-one,
+	.es .paneldouble .panelover-two,
+	.es .paneldouble .panelover-three{
+		font: normal 1.625em/1em 'NissanAGRegular';	
+	}
+	
+	.es .paneldouble .panelover-three{
+		font: normal 1.376em/1em 'NissanAGBold';
+	}
+	
+	.it .paneldouble .panelover-one,
+	.it .paneldouble .panelover-two,
+	.it .paneldouble .panelover-three{
+		font: normal 1.376em/1em 'NissanAGRegular';	
+	}
+	
+	.it .paneldouble .panelover-three{
+		font: normal 1.376em/1em 'NissanAGBold';
+	}
+	
+	.pt .paneldouble .panelover-one,
+	.pt .paneldouble .panelover-two,
+	.pt .paneldouble .panelover-three{
+		font: normal 1.55em/1em 'NissanAGRegular';	
+	}
+	
+	.pt .paneldouble .panelover-three{
+		font: normal 1.376em/1em 'NissanAGBold';
+	}
+	
+	.de .paneldouble .panelover-one,
+	.de .paneldouble .panelover-two,
+	.de .paneldouble .panelover-three{
+		font: normal 1.4em/1em 'NissanAGRegular';	
+	}
+	
+	.de .paneldouble .panelover-three{
+		font: normal 1.376em/1em 'NissanAGBold';
+	}
+	
+	.paneldouble .paneloverlink{
+		padding-top: 9em;
+	}
+	
+	/* -- #feature panels -- */
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    clear: both;
+}
+
+.clearboth{
+	clear: both;
+}
+
+	
+/* currently language locked, high specificity, can be generalized to a certain extent, though competing with specificity  */
+body.pt article.subsection.ascenderfix .grid-wrap .grid-col h3 {
+	margin: 0.24em 0 0 !important;
+}
+body.pt .subsection.ascenderfix ul {
+	margin-top: 0.45em;
+}
+body.pt .subsection.ascenderfix ul li + li {
+	padding-top: 0.55em;
+}
+
+/* === Print styles ==================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,108 @@
+#jPanelMenu-menu{
+	background-color: #222;
+}
+
+.accordion,
+.accordion ul,
+.accordion li,
+.accordion a,
+.accordion span {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.accordion li {
+	list-style: none;
+}
+
+.accordion li > a {
+	display: block;
+	position: relative;
+	min-width: 234px;
+	font: normal 0.8em/1em 'NissanAGBold';
+	padding: 1.5em 2em;
+	text-transform: uppercase;
+	border-bottom: 1px solid #383838;
+}
+
+.accordion > li:hover > a,
+.accordion > li:target > a,
+.accordion > li > a.active {
+	color: #999;
+	background: #383838;
+	
+}
+
+.accordion > li > a:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 210px;
+	margin: 4px 8px;
+
+	background-repeat: no-repeat;
+	background-image: url(../img/mobile_sprite.png);
+	background-position: -5000px -5000px;
+}
+
+.accordion li.acc-sub > a,
+.accordion li.acc-sub > a:before { background: url('../img/mobile_sprite.png') no-repeat 254px -79px transparent; }
+
+.accordion li.acc-sub:hover > a,
+.accordion li.acc-sub:hover > a:before,
+.accordion li.acc-sub:target > a:before { 
+	color: #999;
+	background: url('../img/mobile_sprite.png') no-repeat 254px -79px #383838;
+}
+
+.accordion li.acc-sub > a.active,
+.accordion li.acc-sub > a.active:before{
+	background: url('../img/mobile_sprite.png') no-repeat 254px -179px #383838;	
+}
+
+.acc-lang{
+	float: left;
+	height: 24px;
+	width: 24px;
+	display: block;
+	margin-right: 0.25em;
+	position: relative;
+	top: -0.2em;
+	background: url('../img/mobile_sprite.png') no-repeat 0 0 transparent; }
+
+/* Sub Menu */
+
+.sub-menu li a {
+	color: #383838;
+	border-bottom: 1px solid #BBB;
+	font: normal 0.75em/1em 'NissanAGBold';
+	padding-left: 3.4em;
+	background: url('../img/mobile_sprite.png') no-repeat 0px -379px #CCC;
+	word-wrap: break-word;
+	padding-right: 1em;
+	width:  100px !important;
+
+}
+
+.sub-menu li:hover a {
+	color: #FFFFFF;
+	background: url('../img/mobile_sprite.png') no-repeat 0px -429px #C71443; 
+}
+
+.sub-menu li:last-child a { border: none; }
+
+
+
+
+/* Functionality */
+
+.accordion li > .sub-menu {
+	display: none;
+}
+
+.accordion li:target > .sub-menu {
+	display: block;
+}

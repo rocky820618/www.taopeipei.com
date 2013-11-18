@@ -1,0 +1,14 @@
+<article class="gallery clearfix">
+<h2>{{ site.copy.general.gallery_kong | t: }}</h2>
+	<ul class="grid-wrap quarter-gutter">
+		{% for item in page.gallery_kong %}
+			<li class="image grid-col bp1-col-one-half bp2-col-one-quarter">
+				<a href="{{ page.relative_root | t: }}{{ site.image_root }}{{ page.image_dir | t:  }}/{{ item.href | t:  }}" class="galleryimg trackfeature-gallery" title="Image {{ forloop.index }} - {{ page.subtitle | t:  }}" data-fancybox-group="gallery" >
+				<img src="{{ page.relative_root | t:  }}{{ site.image_root }}{{ page.image_dir | t:  }}/{{ item.thumb | t:  }}" alt="{{ page.subtitle | t:  }} Image {{ forloop.index }}" />
+				<span class="icon"></span>
+				<div class="highlight"></div>
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</article>

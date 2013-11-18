@@ -1,0 +1,49 @@
+{% include global/doc_head.html %}
+
+<div class="header-container clearfix noborder">
+	<div class="wrapper-wide borderbottom">
+		<header class="wrapper clearfix noborder">
+			<a href="index.html" id="logo">{{ site.copy.nml.nissan | t: }} {{ site.copy.nml.shift | t: }}{{ site.copy.general.underscore | t: }}</a>
+			<div class="title">
+				<a href="index.html" class="trackcommon-01">{{ site.copy.general.home | t: }}</a>
+				<a href="explore_innovations.html" class="trackcommon-01b">{{ site.copy.general.explore_innovations | t: }}</a>
+			</div>
+			<a href="#" class="menu-trigger"></a>
+		</header>
+	</div>
+	<div class="wrapper-wide noborder">
+		<div id="nav-bar-secondary">
+			<nav class="wrapper clearfix noborder">
+				<div class="secondarylinks">
+					<ul class="links">
+						<li><a href="javascript:void(0);" data-id="all" id="all" class="trackcommon-explore-all">{{ site.explore_filters.view_all | t: }}</a></li>
+						<li><a href="javascript:void(0);" data-id="performance" id="performance" class="trackcommon-explore-performance">{{ site.explore_filters.performance | t: }}</a></li>
+						<li><a href="javascript:void(0);" data-id="technology" id="technology" class="trackcommon-explore-technology">{{ site.explore_filters.technology | t: }}</a></li>
+						<li><a href="javascript:void(0);" data-id="design" id="design" class="trackcommon-explore-design">{{ site.explore_filters.design | t: }}</a></li>
+						<li><a href="javascript:void(0);" data-id="sustainability" id="sustainability" class="trackcommon-explore-sustainability">{{ site.explore_filters.sustainability | t: }}</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="main-container clearfix">
+	<div class="wrapper-wide">
+		<div class="main wrapper clearfix">
+			
+			<div class="explore-container clearfix">
+			
+			{% if page.features %}
+				{% include explore/items.html %}
+			{% endif %}
+
+			</div>
+			
+		</div> <!-- #main -->
+	</div>
+</div> <!-- #main-container -->
+         
+{% include global/footer.html %}
+
+{% include global/doc_foot.html %}

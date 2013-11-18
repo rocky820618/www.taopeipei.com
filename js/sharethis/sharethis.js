@@ -1,0 +1,1 @@
+stLight.options({publisher: "5b1a99e9-0382-4d01-ba55-953eec86de21"});
